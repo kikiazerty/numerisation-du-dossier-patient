@@ -1,0 +1,7 @@
+CREATE TABLE `CLASSE_DMT` (
+  `CODE` char(2) NOT NULL DEFAULT '',
+  `LIBELLE` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`CODE`)
+); 
+
+INSERT INTO CLASSE_DMT VALUES ('FT','DMT pour forfaits techniques');

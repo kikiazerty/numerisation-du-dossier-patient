@@ -1,0 +1,6 @@
+CREATE TABLE `AGR_RADIO` (
+  `CODE` char(2) NOT NULL DEFAULT '',
+  `LIBELLE` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`CODE`)
+); 
+

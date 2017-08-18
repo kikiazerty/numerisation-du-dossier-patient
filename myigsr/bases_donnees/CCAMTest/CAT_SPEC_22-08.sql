@@ -1,0 +1,11 @@
+CREATE TABLE `CAT_SPEC` (
+  `CODE` char(2) NOT NULL DEFAULT '',
+  `LIBELLE` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`CODE`)
+); 
+
+INSERT INTO CAT_SPEC VALUES ('CD','Chirurgiens dentistes');
+INSERT INTO CAT_SPEC VALUES ('D1','Dentistes');
+INSERT INTO CAT_SPEC VALUES ('D2','ODF');
+INSERT INTO CAT_SPEC VALUES ('SF','Sages femmes');
+INSERT INTO CAT_SPEC VALUES ('TS','Toutes specialites medicales');

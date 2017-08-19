@@ -142,7 +142,7 @@ EOT;
     $sql_insert_blob->bindValue(2, $patient, PDO::PARAM_STR);
     $sql_insert_blob->execute();
     $sql_insert_blob->closeCursor();
-	    
+      
   //on recupere l'ID du blob
     $id_blob= $pdo->lastInsertId();
   //on insere l'en-tete
@@ -179,7 +179,7 @@ EOT;
     $sql_update_header->closeCursor();
 
   }
-    //On enleve le verrou a l'enregistrement		
+    //On enleve le verrou a l'enregistrement    
 
   $sql_enlever_verrou=$pdo->prepare('DELETE FROM Verrous WHERE DossGUID= ?');
   $sql_enlever_verrou->bindValue(1, $patient, PDO::PARAM_STR);
@@ -251,9 +251,9 @@ if (isset($_REQUEST['numeroID']))
     if (count($naissance_components)==3)
     {
       if (checkdate($naissance_components[1],$naissance_components[2],$naissance_components[0]))
-	$naissance=local_to_iso($naissance_tableau[0],$date_format);
+  $naissance=local_to_iso($naissance_tableau[0],$date_format);
       else
-	$naissance="invalid";
+  $naissance="invalid";
     }
     else
       $naissance="invalid";
@@ -290,7 +290,7 @@ if (isset($_REQUEST['numeroID']))
   if (isset($_REQUEST['nouveau']))
   {
     if ($_REQUEST['nouveau'] =="Modifier") //ne pas afficher les boutons si en mode modification d'un document
-    {	  
+    {   
       $afficher_boutons=0;
     }
   }
@@ -400,7 +400,7 @@ if (isset($_REQUEST['nouveau']))
     $patient=$ligne_recup_obs['RbDate_IDDos'];
     $obs=$ligne_recup_obs['RbDate_DataRub'];
     $type_document_code=$ligne_recup_obs['RbDate_TypeRub'];
-	    
+      
   //on recupere l'ID du blob
     $id_blob= $pdo->lastInsertId();
 
@@ -559,7 +559,7 @@ function readData(sData)
       {
         selectValue=detail[0]+'_'+detail[1]+'_'+detail[2]+'_'+detail[3]+'_'+detail[4]+'_'+detail[5]+'_'+detail[6]; //guid nom prenom tel adresse pour remplir les champs
         optionDisplay=detail[1]+' '+detail[2]+' '+detail[7]; //nom prenom date den aissance pour 
-	document.forms['form_jour'].select_patient.options[document.forms['form_jour'].select_patient.options.length] = new Option(optionDisplay,selectValue); 
+  document.forms['form_jour'].select_patient.options[document.forms['form_jour'].select_patient.options.length] = new Option(optionDisplay,selectValue); 
       }
     }
   }
@@ -591,47 +591,45 @@ function showButtons(number)
 //Nom=TARTEMPION&Prenom=MARCEL&nouveau=Confirmer+le+changement+de+patient&numeroID=80AEF051-923C-034B-ABAE-1003257EE9A8&date=2013-04-17&ID_document=321798
 if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !isset($_REQUEST['button_valider'])) //afficher la zone de saisie-modification (ancien observation.php si besoin seulement)
 {
-    //Duplication de document. On trouve le contenu du document, on met la date courante, on enregistre et on retourne sur la page de journee avec la nouvelle date.
-    if (($_REQUEST['nouveau'] != 'Dupliquer') AND ($_REQUEST['nouveau'] != 'Confirmer la suppression')) {
+  //Duplication de document. On trouve le contenu du document, on met la date courante, on enregistre et on retourne sur la page de journee avec la nouvelle date.
+    if (($_REQUEST['nouveau']!='Dupliquer') AND ($_REQUEST['nouveau']!='Confirmer la suppression') )
+    {
 
         /*if($titre_indice == 'Première consultation') { ?>
 
             <script type="text/javascript" src="scripts/wysiwyg.js"></script>
        <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script*/
-    }
-        if ($titre_indice != 'accouchement') { ?>
-
-            <script type="text/javascript" src="scripts/wysiwyg.js"></script>
-            <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script>
-        <?php } else header('location:dossierAccouchement.php');
 
     }
-
 ?>
 <!-- 
-	Include the WYSIWYG javascript files
+  Include the WYSIWYG javascript files
 -->
+           <?php if($titre_indice!='accouchement'){ ?>
 
+        <script type="text/javascript" src="scripts/wysiwyg.js"></script>
+    <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script>
+            <?php } else header('location:DossierAccouchement.php');?>
 <!-- 
-	Attach the editor on the textareas
+  Attach the editor on the textareas
 -->
     <script type="text/javascript">
 //<![CDATA[
-	// Use it to attach the editor to all textareas with full featured setup
-	//WYSIWYG.attach('all', full);
-	var mysettings = new WYSIWYG.Settings();
-	mysettings.Width = "100%";
-	full.ReplaceLineBreaks = true; //remplacer les retours chariot du text area par des br
+  // Use it to attach the editor to all textareas with full featured setup
+  //WYSIWYG.attach('all', full);
+  var mysettings = new WYSIWYG.Settings();
+  mysettings.Width = "100%";
+  full.ReplaceLineBreaks = true; //remplacer les retours chariot du text area par des br
 
-	// Use it to attach the editor directly to a defined textarea
-//	 generate_wysiwyg('obs_modifiee',full); //
-	
-	WYSIWYG.attach('obs_modifiee',full); // small setup
-//	WYSIWYG.attach(getElementsByTagName('obs_modifiee'),full); //ReferenceError: getElementsByTagName is not defined
-	//WYSIWYG.attach(document.forms["form_observation"].elements["obs_modifiee"],full); // 	marche pas
+  // Use it to attach the editor directly to a defined textarea
+//   generate_wysiwyg('obs_modifiee',full); //
+  
+  WYSIWYG.attach('obs_modifiee',full); // small setup
+//  WYSIWYG.attach(getElementsByTagName('obs_modifiee'),full); //ReferenceError: getElementsByTagName is not defined
+  //WYSIWYG.attach(document.forms["form_observation"].elements["obs_modifiee"],full); //  marche pas
 //        WYSIWYG.attach(document.getElementById("obs_modifiee"),full); // No textarea found with the given identifier (ID: null)
-	// Use it to display an iframes instead of a textareas
-	//WYSIWYG.display('all', full);  
+  // Use it to display an iframes instead of a textareas
+  //WYSIWYG.display('all', full);  
 //]]>
     </script>
 
@@ -648,8 +646,8 @@ include 'calendar_javascript.php';
 
 <body style="font-size:<?php echo $fontsize; ?>pt" >
   <div class="conteneur">
-<?php	
-// insertion du menu d'en-tete	
+<?php 
+// insertion du menu d'en-tete  
 $anchor="Mode_consultation";
 //include("inc/menu-horiz.php");
 
@@ -663,11 +661,11 @@ if ($afficher_boutons AND stripos($date,'%')) //pas de bouton ajouter un honorai
 {
 ?>
        <form action="compta/saisie_hono.php" method="get" style="float:right" target="_top">
-	<div>
-	  <input name="guid_patient" type="hidden" value="<?php echo $patient ?>"/>
-	  <input name="date" type="hidden" value="<?php echo substr($date_locale,0,10) ?>"/>
-	  <input name="nouveau" type="submit" value="Ajouter un honoraire" />
-	</div>
+  <div>
+    <input name="guid_patient" type="hidden" value="<?php echo $patient ?>"/>
+    <input name="date" type="hidden" value="<?php echo substr($date_locale,0,10) ?>"/>
+    <input name="nouveau" type="submit" value="Ajouter un honoraire" />
+  </div>
       </form>
 <?php
 }
@@ -695,7 +693,7 @@ if ($ligne_verifier_verrou) //Un verrou existe sur ce dossier. On ne fait rien e
 <?php
   }
 ?>
-	<input type="button" value="Informations" onclick="info_verrou()" />
+  <input type="button" value="Informations" onclick="info_verrou()" />
       </div>
 <?php
 }
@@ -739,17 +737,17 @@ foreach ($ligne_global_all AS $ligne_global)
   <div class="tableau">
     <table  style="background-color: pink">
       <tr>
-	<th class="fond_th">
-	  Dates
-	</th>
+  <th class="fond_th">
+    Dates
+  </th>
 <?php
 
 if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !isset($_REQUEST['button_valider']))
 {
 ?>
-	<th class="fond_th">
-	  OBSERVATIONS
-	</th>
+  <th class="fond_th">
+    OBSERVATIONS
+  </th>
 <?php
 }
 
@@ -762,45 +760,45 @@ for ($i=0;$i< $nb_col;$i++)
   if ($rubriques[$i] != '20060000') //Pas les terrains
   {
     echo '
-	<th class="fond_th">';
+  <th class="fond_th">';
     foreach ($rubrique_perso AS $this_rubrique)
     {
       $elts_rubrique=explode("|",$this_rubrique);
       if ($elts_rubrique[2]==$rubriques[$i])
       {
-	echo "
-	".$elts_rubrique[0]; //trouver le titre de la rubrique en fonction du numero
-	$found=1;
+  echo "
+  ".$elts_rubrique[0]; //trouver le titre de la rubrique en fonction du numero
+  $found=1;
       }
     }
     if ($found==0)
       echo 'Non défini (type '.$rubriques[$i].' à mettre dans config.php)';
     echo "
-	</th>";
+  </th>";
   }
 }
 ?>
       </tr>
       <tr>
-	<td class="fond_td" valign="top" title="Un clic sur une date envoie sur cette date">
+  <td class="fond_td" valign="top" title="Un clic sur une date envoie sur cette date">
 <?php
 if ($afficher_boutons)
 {
 ?>
-	  <a href="consultation.php?numeroID=<?php echo $patient ?>&amp;date=%&amp;nom=<?php echo $patient ?>&amp;prenom=<?php echo $patient ?>">
+    <a href="consultation.php?numeroID=<?php echo $patient ?>&amp;date=%&amp;nom=<?php echo $patient ?>&amp;prenom=<?php echo $patient ?>">
 <?php
 }
 ?>
-	    Toutes
+      Toutes
 <?php
 if ($afficher_boutons)
 {
 ?>
-	  </a>
+    </a>
 <?php
 }
 ?>
-	  <br />
+    <br />
 <?php
 //recherche des dates
 
@@ -877,17 +875,17 @@ if ($res = $conn->query($sql))
     if ($count_utilisateur_autorise)//S'il existe un utilisateur autorise
     {
       if (preg_match("/".$droit_r."/",$ligne_utilisateur_autorise['FriendUserDroits']))//On verifie qu'il a les droits
-	$droit['r']=1;
+  $droit['r']=1;
       else //si connu pas autorise a lire
-	$droit['r']="";
+  $droit['r']="";
        if (preg_match("/".$droit_w."/",$ligne_utilisateur_autorise['FriendUserDroits']))//On verifie qu'il a les droits
-	$droit['w']=1;
+  $droit['w']=1;
       else //si connu pas autorise a ecrire
-	$droit['w']="";
+  $droit['w']="";
        if (preg_match("/".$droit_p."/",$ligne_utilisateur_autorise['FriendUserDroits']))//On verifie qu'il a les droits
-	$droit['p']=1;
+  $droit['p']=1;
       else //si connu pas autorise a ecrire
-	$droit['p']="";
+  $droit['p']="";
     }
     else //si pas connu
     {
@@ -908,19 +906,19 @@ while ($ligne_count_docs_patient=$sql_count_docs_patient->fetch(PDO::FETCH_ASSOC
       $date_unique=$date_courte;
       if ($afficher_boutons)
       {
-	echo "
-	    <a href=\"consultation.php?numeroID=".$patient."&amp;date=".$date_unique."&amp;nom=".$nom."&amp;prenom=".$prenom."\">
-	      ".local_to_iso($date_courte,$date_format)."
-	    </a><br />";
+  echo "
+      <a href=\"consultation.php?numeroID=".$patient."&amp;date=".$date_unique."&amp;nom=".$nom."&amp;prenom=".$prenom."\">
+        ".local_to_iso($date_courte,$date_format)."
+      </a><br />";
       }
       else
-	echo local_to_iso($date_courte,$date_format)."<br />";
+  echo local_to_iso($date_courte,$date_format)."<br />";
     }
-  }			
+  }     
 } //fin de la colonne des dates
 $sql_count_docs_patient->closeCursor();
 echo '
-	  </td>';
+    </td>';
 $type_document_code='';
   //mode formulaire de modification
 
@@ -935,7 +933,7 @@ $type_document_clair['20090000']='Notes avancées';
 if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !isset($_REQUEST['button_valider'])) //afficher la zone de saisie-modification (ancien observation.php si besoin seulement)
 {
 ?>
-	  <td class="fond_td" valign="top" >
+    <td class="fond_td" valign="top" >
 <?php
   if (isset($_REQUEST['observation_ID'])) //document fourni = modifier ou supprimer
   {
@@ -998,8 +996,8 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
   {
     if ($_REQUEST['nouveau']=="Ajouter")
     {
-	$date=iso_to_local(date('Y-m-d'),$date_format);
-	$heure=date("H:i:s");
+  $date=iso_to_local(date('Y-m-d'),$date_format);
+  $heure=date("H:i:s");
     }
   }
 }
@@ -1008,55 +1006,55 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
   if ($_REQUEST['nouveau']=='Supprimer')
   {
 ?>
-	    <form action="consultation.php" method="get">
-	      <fieldset>
-	      <legend>
-		Suppression définitive
-	      </legend>
-	      Voulez-vous vraiment supprimer ce document ? <br />
-	      Il n'y aura aucun moyen de le récupérer. <br />
-	      <input name="nouveau" type="submit" value="Confirmer la suppression" onclick="needToConfirm = false;" />
-	      <input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
-	      <input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
-	      <input name="bouton_annuler" type="submit" value="Annuler" title="Ce document sera abandonné et le verrou sur la fiche retiré" onclick="needToConfirm = false;" />
-	      <input name="observation_ID" type="hidden" value="<?php echo $observation_ID ?>" />
-	      </fieldset>
-	    </form>
+      <form action="consultation.php" method="get">
+        <fieldset>
+        <legend>
+    Suppression définitive
+        </legend>
+        Voulez-vous vraiment supprimer ce document ? <br />
+        Il n'y aura aucun moyen de le récupérer. <br />
+        <input name="nouveau" type="submit" value="Confirmer la suppression" onclick="needToConfirm = false;" />
+        <input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
+        <input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
+        <input name="bouton_annuler" type="submit" value="Annuler" title="Ce document sera abandonné et le verrou sur la fiche retiré" onclick="needToConfirm = false;" />
+        <input name="observation_ID" type="hidden" value="<?php echo $observation_ID ?>" />
+        </fieldset>
+      </form>
 <?php
   }
   elseif ($_REQUEST['nouveau']=='Réattribuer')
   {
 ?>
-	  <form action="consultation.php" method="get" id="form_jour">
-	    <fieldset>
-	      <legend>
-		Changement de patient
-	      </legend>
-	      <table>
-		<tr>
-		  <td style="align:right;">
-		    <label for="Nom">
-		      Nom
-		    </label>
-		  </td>
-		  <td>
-		    <input name="Nom" id="Nom" type="text" value="" onkeyup="request(readData);"/>
+    <form action="consultation.php" method="get" id="form_jour">
+      <fieldset>
+        <legend>
+    Changement de patient
+        </legend>
+        <table>
+    <tr>
+      <td style="align:right;">
+        <label for="Nom">
+          Nom
+        </label>
+      </td>
+      <td>
+        <input name="Nom" id="Nom" type="text" value="" onkeyup="request(readData);"/>
                     <label for="check_exact">
-		    Exact
-		    </label>
-		    <input type="checkbox" name="check_exact" id="check_exact" onclick="request(readData)"/> 
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    <label for="Prenom">Prénom</label>
-		  </td>
-		  <td>
-		    <input name="Prenom" id="Prenom" type="text" value="" onkeyup="request(readData);"/>
-		    </td>
-		    </tr>
-		    <tr>
-		    <th>
+        Exact
+        </label>
+        <input type="checkbox" name="check_exact" id="check_exact" onclick="request(readData)"/> 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="Prenom">Prénom</label>
+      </td>
+      <td>
+        <input name="Prenom" id="Prenom" type="text" value="" onkeyup="request(readData);"/>
+        </td>
+        </tr>
+        <tr>
+        <th>
                     <select name="select_critere" id="select_critere" style="float:left" onchange="request(readData)">
                       <option value="0">
                         Autre critère de recherche
@@ -1093,94 +1091,94 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
                     </tr>
                     <tr>
                     <td>
-		    <select name="select_patient" id="select_patient" style="float:left;clear: both;" onchange="fillFields()">
+        <select name="select_patient" id="select_patient" style="float:left;clear: both;" onchange="fillFields()">
                       <option></option>
-		    </select>
-		    </td>
-		    <td>
-		    <input type="button" value="Remplir les champs" onclick="fillFields()" style="float:left;clear: both;"/>
-<!-- 		    <input type="button" value="Choisir un patient" onclick="chercher_patient()" style="float:left;"/> -->
-		    <input type="button" value="Vider" onclick="vide_form()"  style="float:left"/>
+        </select>
+        </td>
+        <td>
+        <input type="button" value="Remplir les champs" onclick="fillFields()" style="float:left;clear: both;"/>
+<!--        <input type="button" value="Choisir un patient" onclick="chercher_patient()" style="float:left;"/> -->
+        <input type="button" value="Vider" onclick="vide_form()"  style="float:left"/>
 
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    <div id="submit_confirm" style="display:none;" >
-		      <input name="patient_orig" type="hidden" value="<?php echo $_REQUEST['numeroID'] ?>"/>
-		      <input name="nouveau" type="submit" value="Confirmer le changement de patient" />
-		      <input name="numeroID" id="numeroID" type="text" value="<?php echo $patient ?>"/>
-		      <input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
-		      <input name="ID_document" type="hidden" value="<?php echo $observation_ID ?>" />
-		    </div>
-		  </td>
-		</tr>
-	      </table>
-	    </fieldset>
-	  </form>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="submit_confirm" style="display:none;" >
+          <input name="patient_orig" type="hidden" value="<?php echo $_REQUEST['numeroID'] ?>"/>
+          <input name="nouveau" type="submit" value="Confirmer le changement de patient" />
+          <input name="numeroID" id="numeroID" type="text" value="<?php echo $patient ?>"/>
+          <input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
+          <input name="ID_document" type="hidden" value="<?php echo $observation_ID ?>" />
+        </div>
+      </td>
+    </tr>
+        </table>
+      </fieldset>
+    </form>
 <?php
   }
 ?>
 
 
-	    <form action="consultation.php" method="post" id="form_observation">
-	      <table  style="width:auto;margin-left:auto;margin-right:auto;">
-		<tr>
-		  <th colspan="2">
- 		    <input name="numeroID" id="numeroID" type="hidden" value="<?php echo $patient ?>" />
-		    <input name="ID_PrimKey" id="ID_PrimKey" type="hidden" value="<?php echo $ID_PrimKey ?>" />
-		    <label for="titre_observation">
-		      Titre&nbsp;:
-		    </label>
-		    <input name="titre_observation" id="titre_observation" type="text" value="<?php echo $titre ?>" size="20" maxlength="40"/>
+      <form action="consultation.php" method="post" id="form_observation">
+        <table  style="width:auto;margin-left:auto;margin-right:auto;">
+    <tr>
+      <th colspan="2">
+        <input name="numeroID" id="numeroID" type="hidden" value="<?php echo $patient ?>" />
+        <input name="ID_PrimKey" id="ID_PrimKey" type="hidden" value="<?php echo $ID_PrimKey ?>" />
+        <label for="titre_observation">
+          Titre&nbsp;:
+        </label>
+        <input name="titre_observation" id="titre_observation" type="text" value="<?php echo $titre ?>" size="20" maxlength="40"/>
                    <input name="button_valider" type="submit" value="<?php if (isset ($_REQUEST['observation_ID'])) echo "Modifier"; else echo "Valider" ?>" onclick="needToConfirm = false;" />
-		  </th>
-		</tr>
-		<tr>
-		  <th>
-		    <label for="datepicker">
-		      Date&nbsp;:
-		    </label>
-		    <input type="text" name="date_modifiee" id="datepicker" value="<?php echo $date?>" size="13" />
-		    <input type="image" src="pics/calendar.png" alt="calendrier" onclick="return getCalendar(document.forms['form_observation'].date_modifiee);" />
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <label for="datepicker">
+          Date&nbsp;:
+        </label>
+        <input type="text" name="date_modifiee" id="datepicker" value="<?php echo $date?>" size="13" />
+        <input type="image" src="pics/calendar.png" alt="calendrier" onclick="return getCalendar(document.forms['form_observation'].date_modifiee);" />
 </th>
-		  <th>
-		    <label for="heure_observation_modifiee">
-		      Heure&nbsp;:
-		    </label>
-		    <input name="heure_observation_modifiee" id="heure_observation_modifiee" type="text" value="<?php echo $heure?>" size="6" maxlength="8"/>
-		  </th>
-		</tr>
-		<tr>
-		  <th colspan="4">
-		  <textarea name="obs_modifiee" id="obs_modifiee" rows="25" cols="60" style="width:800px;background-color:pink;" ><?php echo $fiche_mieux ?></textarea>
-		  </th>
-		</tr>
-		<tr>
-		  <th colspan="3">
+      <th>
+        <label for="heure_observation_modifiee">
+          Heure&nbsp;:
+        </label>
+        <input name="heure_observation_modifiee" id="heure_observation_modifiee" type="text" value="<?php echo $heure?>" size="6" maxlength="8"/>
+      </th>
+    </tr>
+    <tr>
+      <th colspan="4">
+      <textarea name="obs_modifiee" id="obs_modifiee" rows="25" cols="60" style="width:800px;background-color:pink;" ><?php echo $fiche_mieux ?></textarea>
+      </th>
+    </tr>
+    <tr>
+      <th colspan="3">
 <?php
   if (isset ($_REQUEST['observation_ID'])) //Bouton Modifier de la fiche patient
   {
     if ($type_document_code!='20020100') //pas de "en tant que" pour les ordonnances structurees
     {
 ?>
-		    Modifier en tant que : 
+        Modifier en tant que : 
 <?php
     }
 ?>
-		    <input type="hidden" name="observation_ID" value="<?php echo $observation_ID ?>" />
+        <input type="hidden" name="observation_ID" value="<?php echo $observation_ID ?>" />
 <?php
   }
   else
   {
 ?>
-		    Enregistrer en tant que : 
+        Enregistrer en tant que : 
 <?php
   }
   if ($type_document_code!='20020100') //pas de select si ordonnance structuree
   {
 ?>
-		    <select name="rubrique">
+        <select name="rubrique">
 <?php
 //Chercher si l'utilisateur a des droits en ecriture dans les differentes rubriques
     $droits_delegues='';
@@ -1216,46 +1214,46 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
     {
       foreach ($rubrique_perso AS $this_rubrique) //pris dans le config.php
       {
-	$elts_rubrique=explode("|",$this_rubrique);
-	if ($elts_rubrique[2]!='20050000')
-	{
-	  if ((stripos($ligne_chercher_droits['Droits'],$elts_rubrique[1].'c') OR (stripos($droits_delegues,$elts_rubrique[1].'c'))) AND $elts_rubrique[2] !='20020100') //Ne pas proposer d'enregistrer si l'utilisateur n'a pas les droits directs ou delegues ou si ordo structuree
-	  {
+  $elts_rubrique=explode("|",$this_rubrique);
+  if ($elts_rubrique[2]!='20050000')
+  {
+    if ((stripos($ligne_chercher_droits['Droits'],$elts_rubrique[1].'c') OR (stripos($droits_delegues,$elts_rubrique[1].'c'))) AND $elts_rubrique[2] !='20020100') //Ne pas proposer d'enregistrer si l'utilisateur n'a pas les droits directs ou delegues ou si ordo structuree
+    {
 ?>
-		      <option value="<?php echo $elts_rubrique[2] ?>" <?php if ($type_document_code==$elts_rubrique[2] OR $type_nouveau==$elts_rubrique[2]) echo "selected=\"selected\"" ?> >
-			<?php echo $elts_rubrique[0] ?>
-		      </option>
+          <option value="<?php echo $elts_rubrique[2] ?>" <?php if ($type_document_code==$elts_rubrique[2] OR $type_nouveau==$elts_rubrique[2]) echo "selected=\"selected\"" ?> >
+      <?php echo $elts_rubrique[0] ?>
+          </option>
 <?php
-	  }
-	}
+    }
+  }
       }
     }
 ?>
-		    </select>
+        </select>
 <?php
   } //fin du deroulant du type
   else //pas de deroulant, mais valeur pour ordo structuree
   {
 ?>
-		    <input name="rubrique" type="hidden" value="20020100" />
-		    <input name="ordostruct" type="hidden" value="<?php echo $struct ?>" />
+        <input name="rubrique" type="hidden" value="20020100" />
+        <input name="ordostruct" type="hidden" value="<?php echo $struct ?>" />
 <?php
   }
 ?>
-		    <input name="button_valider" type="submit" value="<?php if (isset ($_REQUEST['observation_ID'])) echo "Modifier"; else echo "Valider" ?>" onclick="needToConfirm = false;" />
+        <input name="button_valider" type="submit" value="<?php if (isset ($_REQUEST['observation_ID'])) echo "Modifier"; else echo "Valider" ?>" onclick="needToConfirm = false;" />
                     <input name="bouton_annuler" type="submit" value="Annuler" title="Ce document sera abandonné et le verrou sur la fiche retiré" onclick="needToConfirm = false;" />
-		  </th>
-		</tr>
-	      </table>
-	    </form>
-<!--	    <form action="consultation.php" method="post" >
-	      <div>
-		<input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
-		<input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
-		<input name="bouton_annuler" type="submit" value="Annuler" title="Ce document sera abandonné et le verrou sur la fiche retiré" onclick="needToConfirm = false;" />
-	      </div>
-	    </form>-->
-	  </td>
+      </th>
+    </tr>
+        </table>
+      </form>
+<!--      <form action="consultation.php" method="post" >
+        <div>
+    <input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
+    <input name="date" type="hidden" value="<?php echo local_to_iso($date,$date_format) ?>" />
+    <input name="bouton_annuler" type="submit" value="Annuler" title="Ce document sera abandonné et le verrou sur la fiche retiré" onclick="needToConfirm = false;" />
+        </div>
+      </form>-->
+    </td>
 <?php
 }
 $zone=0; //compteur pour les zones des boutons
@@ -1263,7 +1261,7 @@ $zone=0; //compteur pour les zones des boutons
 foreach ($rubriques AS $this_rubrique) //le tableau des differents documents
 {
 ?>
-	  <td class="fond_td" valign="top" >
+    <td class="fond_td" valign="top" >
 <?php
 
   reset($ligne_global_all);
@@ -1276,7 +1274,7 @@ foreach ($rubriques AS $this_rubrique) //le tableau des differents documents
     {
       if ($_REQUEST['observation_ID'] == $id_document)
       {
-	$afficher=0;
+  $afficher=0;
       }
     }
     if ($afficher) //ne pas afficher le document s'il est en mode edition
@@ -1288,157 +1286,157 @@ foreach ($rubriques AS $this_rubrique) //le tableau des differents documents
 
       if ($ligne_global['RbDate_TypeRub'] == $this_rubrique) //on affiche les contenus dans la colonne de la rubrique predefinie
       {
-	$date_seule_iso=explode (' ',$ligne_global['RbDate_Date']);
-	$date_document=iso_to_local($date_seule_iso[0],$date_format);
-	echo "
-	      <strong>".str_replace($find,$replace,$ligne_global['RbDate_NomDate'])."</strong> (créé par $login_createur_doc pour $login_possesseur_doc) le $date_document<br />";
-	if ($droits['r'] AND $this_rubrique!='20060000')
-	{
-	  if ($this_rubrique=='20020100') //ordo structuree
-	  {
-	    if ($fiche_mieux=preg_match('/<body[^>]*>(.*)<\/body>/si', $ligne_global["RbDate_DataRub"], $tabordo))
-	    {
-	      $fiche_encore_mieux=stripslashes($tabordo[1]);
-	    }
-	    else //au cas ou le texte n'est pas entoure de balises body
-	      $fiche_encore_mieux=stripslashes($ligne_global["RbDate_DataRub"]);
-	    echo str_replace($find,$replace,$fiche_encore_mieux);
-	  }
-	  else //documents non ordo
-	  {
-	    if (stripos($ligne_global["RbDate_DataRub"],'</HTML_Data>')) //documents multimedia
-	    {
-	      $string=str_replace ('</HTML_Data>','<HTML_Data>',$ligne_global["RbDate_DataRub"]);
-	      $expl=explode('<HTML_Data>',$string);
-	      $html=strip_tags($expl[1],'<br /><img>');
-	      $elements=explode(' ',$html);
-	      $i=0;
-	      foreach ($elements as $this_element)
-	      {
-		if (preg_match('`src`',$this_element))
-		{
-		  echo 'src="afficher_image.php?RbDate_PrimKey='.$ligne_global["RbDate_RefBlobs_PrimKey"].'&amp;compteur_image='.$i.'" alt="Image" ';
-		  $i++;
-		}
-		else
-		  echo $this_element.' ';
-	      }
-	    }
-	    else // document non image
-	    {
-	    //Nettoyage des balises html
-	      $fiche_mieux=preg_match('/<body[^>]*>(.*)<\/body>/si', $ligne_global["RbDate_DataRub"], $tab);
-	      $page=str_replace($find,$replace,$tab[1]);
-	      echo str_replace('__________________','_',$page); //le contenu de l'observation sans les balises body et en raccourcissant les ____ pour que ca tienne mieux
-	    }
-	  }
-	}
-	else //pas les droits de lecture
-	{
-	  echo "
-	    <b>Acc&egrave;s interdit</b> (r&eacute;serv&eacute; &agrave; <b>".$login_possesseur_doc."</b> ou &agrave; ses utilisateurs d&eacute;l&eacute;gu&eacute;s)<br />";
-	}
+  $date_seule_iso=explode (' ',$ligne_global['RbDate_Date']);
+  $date_document=iso_to_local($date_seule_iso[0],$date_format);
+  echo "
+        <strong>".str_replace($find,$replace,$ligne_global['RbDate_NomDate'])."</strong> (créé par $login_createur_doc pour $login_possesseur_doc) le $date_document<br />";
+  if ($droits['r'] AND $this_rubrique!='20060000')
+  {
+    if ($this_rubrique=='20020100') //ordo structuree
+    {
+      if ($fiche_mieux=preg_match('/<body[^>]*>(.*)<\/body>/si', $ligne_global["RbDate_DataRub"], $tabordo))
+      {
+        $fiche_encore_mieux=stripslashes($tabordo[1]);
+      }
+      else //au cas ou le texte n'est pas entoure de balises body
+        $fiche_encore_mieux=stripslashes($ligne_global["RbDate_DataRub"]);
+      echo str_replace($find,$replace,$fiche_encore_mieux);
+    }
+    else //documents non ordo
+    {
+      if (stripos($ligne_global["RbDate_DataRub"],'</HTML_Data>')) //documents multimedia
+      {
+        $string=str_replace ('</HTML_Data>','<HTML_Data>',$ligne_global["RbDate_DataRub"]);
+        $expl=explode('<HTML_Data>',$string);
+        $html=strip_tags($expl[1],'<br /><img>');
+        $elements=explode(' ',$html);
+        $i=0;
+        foreach ($elements as $this_element)
+        {
+    if (preg_match('`src`',$this_element))
+    {
+      echo 'src="afficher_image.php?RbDate_PrimKey='.$ligne_global["RbDate_RefBlobs_PrimKey"].'&amp;compteur_image='.$i.'" alt="Image" ';
+      $i++;
+    }
+    else
+      echo $this_element.' ';
+        }
+      }
+      else // document non image
+      {
+      //Nettoyage des balises html
+        $fiche_mieux=preg_match('/<body[^>]*>(.*)<\/body>/si', $ligne_global["RbDate_DataRub"], $tab);
+        $page=str_replace($find,$replace,$tab[1]);
+        echo str_replace('__________________','_',$page); //le contenu de l'observation sans les balises body et en raccourcissant les ____ pour que ca tienne mieux
+      }
+    }
+  }
+  else //pas les droits de lecture
+  {
+    echo "
+      <b>Acc&egrave;s interdit</b> (r&eacute;serv&eacute; &agrave; <b>".$login_possesseur_doc."</b> ou &agrave; ses utilisateurs d&eacute;l&eacute;gu&eacute;s)<br />";
+  }
 ?>
 <div id='actions<?php echo $zone ?>' style="display:inline" >
 <input type="button" value="Actions" onclick="showButtons(<?php echo $zone ?>)" onmouseover="showButtons(<?php echo $zone ?>)" />
 </div>
 <div id='buttons<?php echo $zone ?>' style="display:none" >
-	    <table>
-	      <tr><!-- bouton interactions ou modifier -->
-		<td>
+      <table>
+        <tr><!-- bouton interactions ou modifier -->
+    <td>
 <?php
-	if ($this_rubrique==20020100 AND $afficher_boutons) //ordo structuree
-	{
-	  $acl=preg_match('/<ordoMedicaStruct>(.*)<\/ordoMedicaStruct>/si', $ligne_global["RbDate_DataRub"], $tab_acl);
+  if ($this_rubrique==20020100 AND $afficher_boutons) //ordo structuree
+  {
+    $acl=preg_match('/<ordoMedicaStruct>(.*)<\/ordoMedicaStruct>/si', $ligne_global["RbDate_DataRub"], $tab_acl);
 ?>
-		  <form action="interactions.php">
-		    <div>
+      <form action="interactions.php">
+        <div>
 <?php
-	  $xml_string=$tab_acl[0];
-	  $xml=simplexml_load_string($xml_string); //marche
+    $xml_string=$tab_acl[0];
+    $xml=simplexml_load_string($xml_string); //marche
 
-	  if (count($xml))
-	  {
-	    $num=0;
-	    foreach ($xml->PosologieList->Posologie  AS $poso)
-	    {
-	      foreach ($xml->PosologieList->Posologie[$num]->cip  AS $cette_acl)
-	      {
+    if (count($xml))
+    {
+      $num=0;
+      foreach ($xml->PosologieList->Posologie  AS $poso)
+      {
+        foreach ($xml->PosologieList->Posologie[$num]->cip  AS $cette_acl)
+        {
 ?>
-		      <input name="cip_medoc[]" type="hidden" value="<?php echo $cette_acl ?>" />
+          <input name="cip_medoc[]" type="hidden" value="<?php echo $cette_acl ?>" />
 <?php
-	      }
-	      $num++;
-	    }
-	  }
+        }
+        $num++;
+      }
+    }
 ?>
-		      <input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
-		      <input name="button_validate_form" type="submit" value="Modifier le contenu" />
-		      <label for="check_only" title="Tenir compte de l'âge du poids ou du sexe">
-			Compatibles
-		      </label>
-		      <input type="checkbox" value="y" name="check_only" id="check_only" checked="checked" />
+          <input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
+          <input name="button_validate_form" type="submit" value="Modifier le contenu" />
+          <label for="check_only" title="Tenir compte de l'âge du poids ou du sexe">
+      Compatibles
+          </label>
+          <input type="checkbox" value="y" name="check_only" id="check_only" checked="checked" />
 
-		    </div>
-		  </form>
+        </div>
+      </form>
 <?php
-	}//fin ordo structuree
+  }//fin ordo structuree
 ?>
-		<br />
+    <br />
 <?php
-	if ($droits['w'] AND $droits['r'] AND $afficher_boutons) //Pas de bouton Modifier si pas droit de lire ou ecrire
-	{
-?>		  <form action="consultation.php" method="get">
+  if ($droits['w'] AND $droits['r'] AND $afficher_boutons) //Pas de bouton Modifier si pas droit de lire ou ecrire
+  {
+?>      <form action="consultation.php" method="get">
 <div>
-		      <input name="observation_ID" type="hidden" value="<?php echo $ligne_global['RbDate_RefBlobs_PrimKey'] ?>"/>
+          <input name="observation_ID" type="hidden" value="<?php echo $ligne_global['RbDate_RefBlobs_PrimKey'] ?>"/>
 <?php
-	  if (!stripos($ligne_global["RbDate_DataRub"],'</HTML_Data>')) //pas de bouton Modifier si le document contient une image
-	  {
+    if (!stripos($ligne_global["RbDate_DataRub"],'</HTML_Data>')) //pas de bouton Modifier si le document contient une image
+    {
 ?>
-		      <input name="nouveau" type="submit" value="Modifier"/>  <br />	
+          <input name="nouveau" type="submit" value="Modifier"/>  <br />  
 <?php
-	  }
+    }
 ?>
-		      <input name="nouveau" type="submit" value="Supprimer"/>  	<br />
-		      <input name="nouveau" type="submit" value="Dupliquer" /><br />
-		      <input name="nouveau" type="submit" value="Réattribuer" />
-		      <input name="numeroID" type="hidden" value="<?php echo $patient ?>"/>
-		      <input name="date" type="hidden" value="<?php echo (substr ($date,0,10)) //iso ?>"/>
-		    </div>
-		  </form>
+          <input name="nouveau" type="submit" value="Supprimer"/>   <br />
+          <input name="nouveau" type="submit" value="Dupliquer" /><br />
+          <input name="nouveau" type="submit" value="Réattribuer" />
+          <input name="numeroID" type="hidden" value="<?php echo $patient ?>"/>
+          <input name="date" type="hidden" value="<?php echo (substr ($date,0,10)) //iso ?>"/>
+        </div>
+      </form>
 <?php
-	}
+  }
 ?>
-		</td>
-		<td>
+    </td>
+    <td>
 <?php
-	if ($droits['r'] AND $droits['p'] AND $afficher_boutons) //pas de bouton Imprimer si pas droit lecture et impression
-	{
-?>		  
-		  <form action="print.php" method="get">
-		    <div>
-		      <input name="id_document" type="hidden" value="<?php echo $id_document ?>"/>
-		      <input name="nouveau" type="submit" value="Imprimer"/>
-		      <br />
-		      <input name="nouveau" type="submit" value="Imprimer en duplicata"/>
-		      <br />
-		      <input name="radio_header" id="radio_header<?php echo $id_document ?>" value="radio_header" type="radio" checked="checked" />
-		      <label for="radio_header<?php echo $id_document ?>">Ajouter un en-tête</label><br />
-		      <input name="radio_header" id="radio_empty_header<?php echo $id_document ?>" value="radio_empty_header"  type="radio" />
-		      <label for="radio_empty_header<?php echo $id_document ?>">Ajouter l'emplacement d'un en-tête</label><br />
-		      <input name="radio_header" id="radio_no_header<?php echo $id_document ?>" value="radio_no_header"  type="radio" />
-		      <label for="radio_no_header<?php echo $id_document ?>">Imprimer pleine page sans en-tête</label>
-		    </div>
-		  </form>
+  if ($droits['r'] AND $droits['p'] AND $afficher_boutons) //pas de bouton Imprimer si pas droit lecture et impression
+  {
+?>      
+      <form action="print.php" method="get">
+        <div>
+          <input name="id_document" type="hidden" value="<?php echo $id_document ?>"/>
+          <input name="nouveau" type="submit" value="Imprimer"/>
+          <br />
+          <input name="nouveau" type="submit" value="Imprimer en duplicata"/>
+          <br />
+          <input name="radio_header" id="radio_header<?php echo $id_document ?>" value="radio_header" type="radio" checked="checked" />
+          <label for="radio_header<?php echo $id_document ?>">Ajouter un en-tête</label><br />
+          <input name="radio_header" id="radio_empty_header<?php echo $id_document ?>" value="radio_empty_header"  type="radio" />
+          <label for="radio_empty_header<?php echo $id_document ?>">Ajouter l'emplacement d'un en-tête</label><br />
+          <input name="radio_header" id="radio_no_header<?php echo $id_document ?>" value="radio_no_header"  type="radio" />
+          <label for="radio_no_header<?php echo $id_document ?>">Imprimer pleine page sans en-tête</label>
+        </div>
+      </form>
 <?php
-	}
+  }
 ?>
-		</td>
-	      </tr>
-	    </table>
+    </td>
+        </tr>
+      </table>
 </div>
 <!-- fin de la zone des boutons -->
-	    <hr />
+      <hr />
 <?php
       } //fin if lectureOK
     } //fin afficher si pas edition

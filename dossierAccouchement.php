@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/dossierAccouchement.css">
     <title></title>
 </head>
-<body>
+<body bgcolor="yellow">
     <h1>Dossier D'Accouchement</h1>
     <label>N° INDEX</label>
     <input type="text" name="index">

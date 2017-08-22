@@ -1,10 +1,12 @@
-<div class="nav noPrint" onmouseover="resizeFrame()" onmouseout="minimizeFrame()">
+
+
+<div class="nav noPrint" onmouseover="resizeFrame()" onmouseout="minimizeFrame()" style="align-content: center;">
 
 	<ul class="select">
-		<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+		<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="#">Accueil &nbsp;&raquo;</a>
 			<div class="select_sub">
 				<ul class="sub">
@@ -17,7 +19,7 @@
 	      </li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="#">Agenda &nbsp;&raquo;</a>
 			<div class="select_sub">
 				<ul class="sub">
@@ -30,7 +32,7 @@
 		</li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="#">Patients &nbsp;&raquo;</a>
 			<div class="select_sub">
 				<ul class="sub">
@@ -43,7 +45,7 @@
 		</li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="#">Intervenants &nbsp;&raquo;</a>
 			<div class="select_sub">
 				<ul class="sub">
@@ -56,11 +58,11 @@
 		</li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="activite.php" target="_top" >Activit&eacute;</a></li>
 	</ul>
 
-	<ul class="select">
+	<ul class="select" style="background-color: #419873;">
 		<li><a href="#">Medicaments &nbsp;&raquo;</a>
 			<div class="select_sub">
 				<ul class="sub">

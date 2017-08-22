@@ -891,7 +891,7 @@ clear:both;
 }
 #cssmenu > ul > li > a:hover {
   text-decoration: none;
-  background: #005d9a;
+  background: red;
   background: -moz-linear-gradient(#005d9a 0%, #033150 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #005d9a), color-stop(100%, #033150));
   background: -webkit-linear-gradient(#005d9a 0%, #033150 100%);

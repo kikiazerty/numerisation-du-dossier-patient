@@ -85,6 +85,7 @@ function verif_champ(sign_user,login,password)
   </head>
   <body style="font-size:<?php echo $fontsize; ?>pt"  onload="donner_focus('login')">
     <div class="conteneur">
+
 <?php
 $username=$loginbase."@".$host;
 
@@ -137,13 +138,16 @@ if ( isset( $_SESSION['login'] ) )
       $sql_supprimer_verrous->closeCursor();
   }
 
-// insertion du menu d'en-tete	
-  $anchor='Connexion_Déconnexion';
+?>
+<img src="images/logopikine.gif" width="100%">
+	
+ <?php $anchor='Connexion_Déconnexion';
   include("inc/menu-horiz.php");
 		
 ?>
+
       <div class="groupe" >
-	<img src="images/logopikine.gif" width="100%">
+
 	<div class="login">
 <?php
   $tab_login=explode("::",$_SESSION['login']);

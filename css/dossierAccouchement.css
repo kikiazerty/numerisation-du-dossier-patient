@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(255, 255, 0, 0.67);
+    margin-top: 3%;
+    margin-left: 6%;
+    /*margin-right: 5%;*/
+    margin-bottom: 5%;
+}
+h1{
+    text-align: center;
+}
+#index{
+    margin-left: 58%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.formfield-radio {
+    position: relative;
+}
+.formfield-radio input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.formfield-radio input[type="radio"] + label {
+    padding: 4px 0 0 24px;
+}
+.formfield-radio input[type="radio"] + label:before {
+    content: " ";
+    display: inline-block; width: 20px; height: 20px;
+    position: absolute; top: 0; left: 0;
+    background: transparent url(sprite.svg) 0 -30px no-repeat;
+}
+/*.formfield-radio input[type="radio"]:checked + label:before {*/
+    /*background-position: -30px -30px;*/
+/*}*/

@@ -10,9 +10,60 @@
     <h3>REPUBLIQUE DU SENEGAL<BR>Ministère de la Santé <BR> et de l'Action Sociale <BR>HOPITAL DE PIKINE</h3>
 
     <h1>Dossier D'Accouchement</h1>
+
+    <?php
+    include("config.php");
+
+    if (isset($_GET['GUID'])) {
+         
+         $patient = $_GET['GUID'];
+
+
+ try
+{
+  $strConnection = 'mysql:host='.$host.';dbname='.$base;
+  $arrExtraParam= array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
+  $pdo = new PDO($strConnection, $loginbase, $pwd, $arrExtraParam); // Instancie la connexion
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch(PDOException $e)
+{
+  $msg = 'ERREUR PDO dans ' . $e->getFile() . ' L.' . $e->getLine() . ' : ' . $e->getMessage();
+  die($msg);
+}
+
+
+         $sql=$pdo->prepare('SELECT * FROM IndexNomPrenom WHERE FchGnrl_IDDos=?');
+            $sql->bindValue(1, $patient, PDO::PARAM_STR);
+            $sql->execute();
+            $ligne=$sql->fetch(PDO::FETCH_ASSOC);
+            $sql->closeCursor();
+
+            $nom=$ligne["FchGnrl_NomDos"];
+            $prenom=$ligne["FchGnrl_Prenom"];
+            $primkey=$ligne["ID_PrimKey"];
+
+            $sql2=$pdo->prepare('SELECT * FROM fchpat WHERE FchPat_GUID_Doss=?');
+            $sql2->bindValue(1, $patient, PDO::PARAM_STR);
+            $sql2->execute();
+            $ligne2=$sql2->fetch(PDO::FETCH_ASSOC);
+            $sql2->closeCursor();
+
+            $ddn = $ligne2["FchPat_Nee"];
+            $adresse =$ligne2["FchPat_Adresse"];
+            $profession=$ligne2["FchPat_Profession"];
+            $tel1 = $ligne2["FchPat_Tel1"];
+            $tel2 = $ligne2["FchPat_Tel2"];
+
+
+
+
+
+     
+    ?>
     <div id="index">
         <label>N° INDEX</label>
-        <input type="text" name="index">
+        <input type="text" name="index" value="<?php echo $patient; ?>">
     </div>
     <table>
         <tr>
@@ -20,13 +71,13 @@
                 <label>NOM/PRENOMS</label>
              </td>
              <td colspan="3">
-                <input type="text" name="nom">
+                <input type="text" name="nom" value="<?php echo $nom." ".$prenom; ?>">
              </td>
             <td>
-                <label>AGE</label>
+                <label>Date de Naissane</label>
             </td>
             <td colspan="2">
-                 <input type="text" name="age">
+                 <input type="text" name="age" value="<?php echo $ddn?>">
             <td>
         </tr>
         <tr>
@@ -34,20 +85,20 @@
                 <label>Adresse</label>
             </td>
             <td>
-                <input type="text" name="adresse">
+                <input type="text" name="adresse" value="<?php echo $adresse?>">
             </td>
 
             <td>
                 <label>Profession</label>
             </td>
             <td>
-                <input type="text" name="profession">
+                <input type="text" name="profession" value="<?php echo $profession?>">
             </td>
             <td>
                 <label>Tél</label>
             </td>
             <td>
-                <input type="text" name="telephone">
+                <input type="text" name="telephone" value="<?php echo $tel1?>">
              <td>
         </tr>
         <tr>
@@ -67,7 +118,7 @@
                  <label>Tél</label>
             </td>
             <td>
-                 <input type="text" name="telephoneEpoux">
+                 <input type="text" name="telephoneEpoux" value="<?php echo $tel2?>">
             </td>
         </tr>
     </table>
@@ -736,4 +787,5 @@
     </table>
 
 </body>
+<?php } ?>
 </html>

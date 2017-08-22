@@ -609,7 +609,7 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
 
         <script type="text/javascript" src="scripts/wysiwyg.js"></script>
     <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script>
-            <?php } else header('location:dossierAccouchement.php');?>
+            <?php } else header('location:dossierAccouchement.php?GUID='.$patient);?>
 <!-- 
   Attach the editor on the textareas
 -->

@@ -428,6 +428,14 @@ $date=$date."%"; //iso
 include("inc/header.php");
 ?>
 
+<?php
+if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !isset($_REQUEST['button_valider'])) //afficher la zone de saisie-modification (ancien observation.php si besoin seulement)
+{
+    if($titre_indice!='accouchement'){?>
+        <script type="text/javascript" src="scripts/wysiwyg.js"></script>
+        <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script>
+    <?php }else header('location:dossierAccouchement.php?GUID='.$patient);?>
+
   <script type="text/javascript">
 //<![CDATA[
 function info_verrou()
@@ -587,29 +595,7 @@ function showButtons(number)
 //]]>
     </script>
 
-<?php
-//Nom=TARTEMPION&Prenom=MARCEL&nouveau=Confirmer+le+changement+de+patient&numeroID=80AEF051-923C-034B-ABAE-1003257EE9A8&date=2013-04-17&ID_document=321798
-if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !isset($_REQUEST['button_valider'])) //afficher la zone de saisie-modification (ancien observation.php si besoin seulement)
-{
-  //Duplication de document. On trouve le contenu du document, on met la date courante, on enregistre et on retourne sur la page de journee avec la nouvelle date.
-    if (($_REQUEST['nouveau']!='Dupliquer') AND ($_REQUEST['nouveau']!='Confirmer la suppression') )
-    {
 
-        /*if($titre_indice == 'Première consultation') { ?>
-
-            <script type="text/javascript" src="scripts/wysiwyg.js"></script>
-       <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script*/
-
-    }
-?>|
-<!-- 
-  Include the WYSIWYG javascript files
--->
-           <?php if($titre_indice!='accouchement'){ ?>
-
-        
-            <?php } else header('location:dossierAccouchement.php?GUID='.$patient);?>
-<!-- 
   Attach the editor on the textareas
 -->
     <script type="text/javascript">

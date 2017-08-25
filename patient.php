@@ -492,6 +492,7 @@ echo $ligne2["FchPat_CP"]." ".$ligne2["FchPat_Ville"].'<br />';
         <li><a href="#" onclick="showHidePannel('intervenant'); return false"><span>Intervenants</span></a></li>
         <li><a href="#" onclick="showHidePannel('schedule'); return false"><span>Rendez-vous</span></a></li>
         <li><a href="#" onclick="showHidePannel('search'); return false"><span>Recherche</span></a></li>
+        <li><a href="dossieraccouchementcomplet.php?GUID=<?php echo $patient ?>" target="droit_bas"><span>dossier d'accouchement</span></a></li>
 	</ul>
 	</div>
 	      <div id='coordinates' style="display:none">
@@ -756,6 +757,7 @@ Taille du cadre d'image<br />
 		      <legend>
 			Page unique
 		      </legend>
+
 <?php
 $rubriques_presentes=array ();
 //mysqli_data_seek($resultat_global,0) ; //remise a zero tableau requete
@@ -783,11 +785,13 @@ if (isset ($rubrique_perso))
 			<label for="x<?php echo $tableau_rubrique_perso[2]; ?>">
 			  <?php echo $tableau_rubrique_perso[0]; ?>
 			</label><br />
+
 <?php
     }
     $compteur_types++;
   }
-}
+  
+ } 
 ?>
 			<input name="numeroID" type="hidden" value="<?php echo $patient ?>" />
 			<input name="button_invert_selection" onclick="Invers()" type="button" value="Inverser la sélection" />

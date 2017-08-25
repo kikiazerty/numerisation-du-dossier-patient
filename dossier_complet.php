@@ -40,6 +40,8 @@ if ( !isset( $_SESSION['login'] ) )
   exit;
 }
 
+
+
 function detectUTF8($string) //pour les notes dont l'encodage est toujours imprévisible
 {
   return preg_match('%(?:
@@ -131,11 +133,14 @@ $ligne_chercher_droits=mysqli_fetch_array($resultat_chercher_droits);
 $GUID_user=$ligne_chercher_droits['GUID'];
 $droits_user=$ligne_chercher_droits['Droits'];
 
+
 //on nettoie les balises html non valides en xhtml
 $find=array('<BR>','<br>','<hr>','<u>','</u>');
 $replace=array('<br />','<br />','<br />','<em>','</em>');
 
 include("inc/header.php");
+
+
 ?>
     <title>
       MedWebTux - Dossier complet d'un patient - Utilisateur <?php echo $_SESSION['login'] ?>

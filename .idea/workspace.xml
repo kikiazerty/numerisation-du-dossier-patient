@@ -25,12 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frame_patient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame_patient.php">
+      <file leaf-file-name="dossierAccouchement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dossierAccouchement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1372" max-vertical-offset="1876">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-              <folding />
+            <state vertical-scroll-proportion="200.14815" vertical-offset="6188" max-vertical-offset="26740">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+              <folding>
+                <marker date="1503661271970" expanded="true" signature="985:1035" placeholder="SELECT * FRO..IndexNomPrenom..." />
+                <marker date="1503661271970" expanded="true" signature="1376:1421" placeholder="SELECT * FRO..fchpat..." />
+                <marker date="1503661271970" expanded="true" signature="1986:2168" placeholder="INSERT INTO ..." />
+                <marker date="1503661271970" expanded="true" signature="3151:3567" placeholder="INSERT INTO ..." />
+                <marker date="1503661271970" expanded="true" signature="5537:5775" placeholder="INSERT INTO ..." />
+                <marker date="1503661271970" expanded="true" signature="6904:7287" placeholder="INSERT INTO ..." />
+                <marker date="1503661271970" expanded="true" signature="9192:9594" placeholder="INSERT INTO ..." />
+                <marker date="1503661271970" expanded="true" signature="11088:11464" placeholder="INSERT INTO ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,127 +47,55 @@
       <file leaf-file-name="consultation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/consultation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8533123" vertical-offset="16455" max-vertical-offset="40964">
-              <caret line="607" column="5" selection-start-line="607" selection-start-column="5" selection-end-line="607" selection-end-column="5" />
+            <state vertical-scroll-proportion="4.7239747" vertical-offset="9213" max-vertical-offset="40516">
+              <caret line="436" column="76" selection-start-line="436" selection-start-column="76" selection-end-line="436" selection-end-column="76" />
               <folding>
-                <marker date="1503071481121" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
-                <marker date="1503071481121" expanded="true" signature="3445:3626" placeholder="..." />
-                <marker date="1503071481121" expanded="false" signature="3544:3583" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="3993:4164" placeholder="..." />
-                <marker date="1503071481121" expanded="false" signature="4085:4124" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="4125:4157" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
-                <marker date="1503071481121" expanded="true" signature="5336:5526" placeholder="INSERT INTO ..." />
-                <marker date="1503071481121" expanded="true" signature="6276:6342" placeholder="UPDATE Rubri..." />
-                <marker date="1503071481121" expanded="true" signature="6591:6697" placeholder="UPDATE Rubri..." />
-                <marker date="1503071481121" expanded="true" signature="7141:7178" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="7750:7787" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="8642:8693" placeholder="SELECT * FRO..IndexNomPrenom..." />
-                <marker date="1503071481121" expanded="true" signature="9094:9140" placeholder="SELECT * FRO..fchpat..." />
-                <marker date="1503071481121" expanded="true" signature="11055:11072" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="11246:11263" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="11974:12137" placeholder="SELECT * FRO..RubriquesBlobs..." />
-                <marker date="1503071481121" expanded="true" signature="12473:12523" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="12705:12763" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="12994:13031" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="13547:13584" placeholder="DELETE FROM ..." />
-                <marker date="1503071481121" expanded="true" signature="13886:13950" placeholder="UPDATE Rubri..." />
-                <marker date="1503071481121" expanded="true" signature="14203:14295" placeholder="UPDATE Rubri..." />
-                <marker date="1503071481121" expanded="true" signature="15035:15197" placeholder="SELECT * FRO..RubriquesBlobs..." />
-                <marker date="1503071481121" expanded="true" signature="15555:15624" placeholder="INSERT INTO ..." />
-                <marker date="1503071481121" expanded="true" signature="16154:16344" placeholder="INSERT INTO ..." />
-                <marker date="1503071481121" expanded="true" signature="26076:26217" placeholder="SELECT UserN..IndexNomPrenom..." />
-                <marker date="1503071481121" expanded="true" signature="26619:26686" placeholder="..." />
-                <marker date="1503071481121" expanded="true" signature="27155:27272" placeholder="INSERT INTO ..." />
-                <marker date="1503071481121" expanded="true" signature="27621:27841" placeholder="SELECT * FRO..RubriquesHead..." />
-                <marker date="1503071481121" expanded="true" signature="29822:29906" placeholder="SELECT RbDat..RubriquesHead..." />
-                <marker date="1503071481121" expanded="true" signature="31615:31656" placeholder="SELECT GUID ..Personnes..." />
-                <marker date="1503071481121" expanded="true" signature="32019:32089" placeholder="SELECT * FRO..user_perms..." />
-                <marker date="1503071481121" expanded="true" signature="34988:35068" placeholder="SELECT RbDat..RubriquesHead..." />
-                <marker date="1503071481121" expanded="true" signature="35487:35528" placeholder="SELECT GUID ..Personnes..." />
-                <marker date="1503071481121" expanded="true" signature="35884:36047" placeholder="SELECT * FRO..RubriquesBlobs..." />
-                <marker date="1503071481121" expanded="true" signature="44371:44412" placeholder="SELECT GUID ..Personnes..." />
-                <marker date="1503071481121" expanded="true" signature="44670:44711" placeholder="SELECT GUID ..Personnes..." />
-                <marker date="1503071481121" expanded="true" signature="45046:45131" placeholder="SELECT Frien..user_perms..." />
+                <marker date="1503664793760" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
+                <marker date="1503664793760" expanded="true" signature="3445:3626" placeholder="..." />
+                <marker date="1503664793760" expanded="false" signature="3544:3583" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="3993:4164" placeholder="..." />
+                <marker date="1503664793760" expanded="false" signature="4085:4124" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="4125:4157" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
+                <marker date="1503664793760" expanded="true" signature="5337:5527" placeholder="INSERT INTO ..." />
+                <marker date="1503664793760" expanded="true" signature="6277:6343" placeholder="UPDATE Rubri..." />
+                <marker date="1503664793760" expanded="true" signature="6592:6698" placeholder="UPDATE Rubri..." />
+                <marker date="1503664793760" expanded="true" signature="7144:7181" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="7753:7790" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="8645:8696" placeholder="SELECT * FRO..IndexNomPrenom..." />
+                <marker date="1503664793760" expanded="true" signature="9097:9143" placeholder="SELECT * FRO..fchpat..." />
+                <marker date="1503664793760" expanded="true" signature="11060:11077" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="11251:11268" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="11979:12142" placeholder="SELECT * FRO..RubriquesBlobs..." />
+                <marker date="1503664793760" expanded="true" signature="12478:12528" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="12710:12768" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="12999:13036" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="13552:13589" placeholder="DELETE FROM ..." />
+                <marker date="1503664793760" expanded="true" signature="13891:13955" placeholder="UPDATE Rubri..." />
+                <marker date="1503664793760" expanded="true" signature="14208:14300" placeholder="UPDATE Rubri..." />
+                <marker date="1503664793760" expanded="true" signature="15040:15202" placeholder="SELECT * FRO..RubriquesBlobs..." />
+                <marker date="1503664793760" expanded="true" signature="15560:15629" placeholder="INSERT INTO ..." />
+                <marker date="1503664793760" expanded="true" signature="16160:16350" placeholder="INSERT INTO ..." />
+                <marker date="1503664793760" expanded="true" signature="23272:23311" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="23349:23456" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="24320:24366" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="24477:24513" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="24514:24571" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="24541:24571" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="25384:25525" placeholder="SELECT UserN..IndexNomPrenom..." />
+                <marker date="1503664793760" expanded="true" signature="25927:25994" placeholder="..." />
+                <marker date="1503664793760" expanded="true" signature="26464:26581" placeholder="INSERT INTO ..." />
+                <marker date="1503664793760" expanded="true" signature="26930:27150" placeholder="SELECT * FRO..RubriquesHead..." />
+                <marker date="1503664793760" expanded="true" signature="29147:29231" placeholder="SELECT RbDat..RubriquesHead..." />
+                <marker date="1503664793760" expanded="true" signature="30940:30981" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503664793760" expanded="true" signature="31344:31414" placeholder="SELECT * FRO..user_perms..." />
+                <marker date="1503664793760" expanded="true" signature="34328:34408" placeholder="SELECT RbDat..RubriquesHead..." />
+                <marker date="1503664793760" expanded="true" signature="34827:34868" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503664793760" expanded="true" signature="35224:35387" placeholder="SELECT * FRO..RubriquesBlobs..." />
+                <marker date="1503664793760" expanded="true" signature="43894:43935" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503664793760" expanded="true" signature="44193:44234" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503664793760" expanded="true" signature="44569:44654" placeholder="SELECT Frien..user_perms..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dossierAccouchement.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dossierAccouchement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.62963" vertical-offset="0" max-vertical-offset="7336">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1503070737887" expanded="true" signature="421:1842" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="434:787" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="451:513" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="543:609" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="626:679" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="708:769" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="773:782" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="800:1299" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="817:874" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="891:960" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="978:1038" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1055:1127" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1144:1197" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1214:1281" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1285:1294" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1312:1829" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1329:1389" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1406:1477" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1494:1555" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1572:1650" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1667:1721" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1738:1815" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1863:3282" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1876:2453" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1905:1960" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="1977:2032" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2049:2118" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2135:2191" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2208:2278" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2295:2352" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2369:2439" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2466:3269" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2483:2536" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2553:2620" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2637:2690" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2707:2774" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2791:2845" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2862:2929" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="2946:3006" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3023:3092" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3109:3169" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3186:3255" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3303:4526" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3316:3980" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3333:3386" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3403:3535" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3552:3614" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3631:3778" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3829:3883" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3900:3966" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="3993:4526" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="4010:4064" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="4081:4214" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="4231:4289" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="4306:4445" placeholder="..." />
-                <marker date="1503070737887" expanded="true" signature="4496:4526" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topframe.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topframe.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1288">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,59 +103,24 @@
       <file leaf-file-name="patient.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="17556" max-vertical-offset="27804">
-              <caret line="627" column="14" selection-start-line="627" selection-start-column="14" selection-end-line="627" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="2296">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dossier_complet.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dossier_complet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="19964">
-              <caret line="143" column="81" selection-start-line="143" selection-start-column="81" selection-end-line="143" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templates.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3808" max-vertical-offset="6020">
-              <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7896" max-vertical-offset="11088">
-              <caret line="282" column="41" selection-start-line="282" selection-start-column="41" selection-end-line="282" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifLogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/verifLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4732" max-vertical-offset="5068">
-              <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
-              <folding />
+            <state vertical-scroll-proportion="-92.53571" vertical-offset="13830" max-vertical-offset="27916">
+              <caret line="679" column="42" selection-start-line="679" selection-start-column="42" selection-end-line="679" selection-end-column="42" />
+              <folding>
+                <marker date="1503661271995" expanded="true" signature="944:999" placeholder="SELECT GUID,..Personnes..." />
+                <marker date="1503661271995" expanded="true" signature="2906:2956" placeholder="SELECT * FRO..IndexNomPrenom..." />
+                <marker date="1503661271995" expanded="true" signature="3273:3318" placeholder="SELECT * FRO..fchpat..." />
+                <marker date="1503661271995" expanded="true" signature="4353:4427" placeholder="SELECT * FRO..RubriquesHead..." />
+                <marker date="1503661271995" expanded="true" signature="8454:8657" placeholder="..." />
+                <marker date="1503661271995" expanded="true" signature="9295:9332" placeholder="DELETE FROM ..." />
+                <marker date="1503661271995" expanded="true" signature="10017:10068" placeholder="SELECT * FRO..fchpat_Note..." />
+                <marker date="1503661271995" expanded="true" signature="10221:10384" placeholder="SELECT * FRO..fchpat_Intervenants..." />
+                <marker date="1503661271995" expanded="true" signature="18349:18457" placeholder="..." />
+                <marker date="1503661271995" expanded="true" signature="18362:18445" placeholder="..." />
+                <marker date="1503661271995" expanded="true" signature="22422:22463" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503661271995" expanded="true" signature="22917:22958" placeholder="SELECT GUID ..Personnes..." />
+                <marker date="1503661271995" expanded="true" signature="23572:23657" placeholder="SELECT Frien..user_perms..." />
+                <marker date="1503661271995" expanded="true" signature="30477:30521" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -274,6 +176,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -288,19 +191,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="numerisation du dossier patient" />
+              <option name="myItemId" value="numerisation_dossier_patient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="config&#9;FILE&#9;file://C:/wamp/www/medwebtux/config.php&#10;dossier&#9;FILE&#9;file://C:/wamp/www/medwebtux/dossier_complet.php&#10;patie&#9;FILE&#9;file://C:/wamp/www/medwebtux/patient.php&#10;cons&#9;FILE&#9;file://C:/wamp/www/medwebtux/consultation.php&#10;verif&#9;FILE&#9;file://C:/wamp/www/medwebtux/verifLogin.php&#10;tem&#9;FILE&#9;file://C:/wamp/www/medwebtux/templates.php&#10;table&#9;FILE&#9;file://C:/wamp/www/medwebtux/tableaux.php&#10;fram&#9;FILE&#9;file://C:/wamp/www/medwebtux/frame_patient.php&#10;nou&#9;FILE&#9;file://C:/wamp/www/medwebtux/nouveau_dossier.php&#10;saisie&#9;FILE&#9;file://C:/wamp/www/medwebtux/compta/saisie_hono.php&#10;consul&#9;FILE&#9;file://C:/wamp/www/medwebtux/consultation.php&#10;templ&#9;FILE&#9;file://C:/wamp/www/medwebtux/templates.php&#10;pati&#9;FILE&#9;file://C:/wamp/www/medwebtux/patient.php&#10;medi&#9;FILE&#9;file://C:/wamp/www/medwebtux/medicaments.php&#10;top&#9;FILE&#9;file://C:/wamp/www/medwebtux/topframe.php" />
+    <property name="SearchEverywhereHistoryKey" value="con&#9;FILE&#9;file://C:/wamp64/www/numerisation_dossier_patient/consultation.php&#10;config&#9;FILE&#9;file://C:/wamp/www/medwebtux/config.php&#10;dossier&#9;FILE&#9;file://C:/wamp/www/medwebtux/dossier_complet.php&#10;patie&#9;FILE&#9;file://C:/wamp/www/medwebtux/patient.php&#10;cons&#9;FILE&#9;file://C:/wamp/www/medwebtux/consultation.php&#10;verif&#9;FILE&#9;file://C:/wamp/www/medwebtux/verifLogin.php&#10;tem&#9;FILE&#9;file://C:/wamp/www/medwebtux/templates.php&#10;table&#9;FILE&#9;file://C:/wamp/www/medwebtux/tableaux.php&#10;fram&#9;FILE&#9;file://C:/wamp/www/medwebtux/frame_patient.php&#10;nou&#9;FILE&#9;file://C:/wamp/www/medwebtux/nouveau_dossier.php&#10;saisie&#9;FILE&#9;file://C:/wamp/www/medwebtux/compta/saisie_hono.php&#10;consul&#9;FILE&#9;file://C:/wamp/www/medwebtux/consultation.php&#10;templ&#9;FILE&#9;file://C:/wamp/www/medwebtux/templates.php&#10;pati&#9;FILE&#9;file://C:/wamp/www/medwebtux/patient.php&#10;medi&#9;FILE&#9;file://C:/wamp/www/medwebtux/medicaments.php&#10;top&#9;FILE&#9;file://C:/wamp/www/medwebtux/topframe.php" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -317,6 +219,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -326,12 +231,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8d1fd30d-a049-43c0-942d-7bd47bbd6912" name="Default" comment="" />
@@ -346,15 +251,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1751302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -365,27 +270,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18003026" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -427,48 +311,204 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/consultation.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="40908">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1503664793760" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="3445:3626" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="3544:3583" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="3993:4164" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="4085:4124" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4125:4157" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="5337:5527" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="6277:6343" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="6592:6698" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="7144:7181" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="7753:7790" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="8645:8696" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="9097:9143" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503664793760" expanded="true" signature="11060:11077" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11251:11268" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11979:12142" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="12478:12528" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12710:12768" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12999:13036" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13552:13589" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13891:13955" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="14208:14300" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="15040:15202" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="15560:15629" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="16160:16350" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="23272:23311" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="23349:23456" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24320:24366" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24477:24513" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24514:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24541:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="25384:25525" placeholder="SELECT UserN..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="25927:25994" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="26464:26581" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="26930:27150" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="29147:29231" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="30940:30981" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="31344:31414" placeholder="SELECT * FRO..user_perms..." />
+            <marker date="1503664793760" expanded="true" signature="34328:34408" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="34827:34868" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="35224:35387" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="43894:43935" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44193:44234" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44569:44654" placeholder="SELECT Frien..user_perms..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dossierAccouchement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="26740">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <marker date="1503661271970" expanded="true" signature="985:1035" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503661271970" expanded="true" signature="1376:1421" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503661271970" expanded="true" signature="1986:2168" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="3151:3567" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="5537:5775" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="6904:7287" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="9192:9594" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="11088:11464" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topframe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1288">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17556" max-vertical-offset="27916">
+          <caret line="627" column="2" selection-start-line="627" selection-start-column="2" selection-end-line="627" selection-end-column="2" />
+          <folding>
+            <marker date="1503661271995" expanded="true" signature="944:999" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="2906:2956" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503661271995" expanded="true" signature="3273:3318" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503661271995" expanded="true" signature="4353:4427" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503661271995" expanded="true" signature="8454:8657" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="9295:9332" placeholder="DELETE FROM ..." />
+            <marker date="1503661271995" expanded="true" signature="10017:10068" placeholder="SELECT * FRO..fchpat_Note..." />
+            <marker date="1503661271995" expanded="true" signature="10221:10384" placeholder="SELECT * FRO..fchpat_Intervenants..." />
+            <marker date="1503661271995" expanded="true" signature="18349:18457" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="18362:18445" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="22422:22463" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="22917:22958" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="23572:23657" placeholder="SELECT Frien..user_perms..." />
+            <marker date="1503661271995" expanded="true" signature="30477:30521" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="2296">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dossier_complet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="20104">
+          <caret line="143" column="2" selection-start-line="143" selection-start-column="2" selection-end-line="143" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3808" max-vertical-offset="6020">
+          <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7896" max-vertical-offset="11200">
+          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verifLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4732" max-vertical-offset="5068">
+          <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame_patient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1372" max-vertical-offset="1876">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultation.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17080" max-vertical-offset="40908">
           <caret line="610" column="53" selection-start-line="610" selection-start-column="53" selection-end-line="610" selection-end-column="53" />
           <folding>
-            <marker date="1503071481121" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="3445:3626" placeholder="..." />
-            <marker date="1503071481121" expanded="false" signature="3544:3583" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="3993:4164" placeholder="..." />
-            <marker date="1503071481121" expanded="false" signature="4085:4124" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="4125:4157" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="5336:5526" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="6276:6342" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="6591:6697" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="7141:7178" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="7750:7787" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="8642:8693" placeholder="SELECT * FRO..IndexNomPrenom..." />
-            <marker date="1503071481121" expanded="true" signature="9094:9140" placeholder="SELECT * FRO..fchpat..." />
-            <marker date="1503071481121" expanded="true" signature="11055:11072" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="11246:11263" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="11974:12137" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="12473:12523" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="12705:12763" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="12994:13031" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="13547:13584" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="13886:13950" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="14203:14295" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="15035:15197" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="15555:15624" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="16154:16344" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="26076:26217" placeholder="SELECT UserN..IndexNomPrenom..." />
-            <marker date="1503071481121" expanded="true" signature="26619:26686" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="27155:27272" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="27621:27841" placeholder="SELECT * FRO..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="29822:29906" placeholder="SELECT RbDat..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="31615:31656" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="32019:32089" placeholder="SELECT * FRO..user_perms..." />
-            <marker date="1503071481121" expanded="true" signature="34988:35068" placeholder="SELECT RbDat..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="35487:35528" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="35884:36047" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="44371:44412" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="44670:44711" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="45046:45131" placeholder="SELECT Frien..user_perms..." />
+            <marker date="1503664793760" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="3445:3626" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="3544:3583" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="3993:4164" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="4085:4124" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4125:4157" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="5337:5527" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="6277:6343" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="6592:6698" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="7144:7181" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="7753:7790" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="8645:8696" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="9097:9143" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503664793760" expanded="true" signature="11060:11077" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11251:11268" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11979:12142" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="12478:12528" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12710:12768" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12999:13036" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13552:13589" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13891:13955" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="14208:14300" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="15040:15202" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="15560:15629" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="16160:16350" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="23272:23311" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="23349:23456" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24320:24366" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24477:24513" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24514:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24541:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="25384:25525" placeholder="SELECT UserN..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="25927:25994" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="26464:26581" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="26930:27150" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="29147:29231" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="30940:30981" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="31344:31414" placeholder="SELECT * FRO..user_perms..." />
+            <marker date="1503664793760" expanded="true" signature="34328:34408" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="34827:34868" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="35224:35387" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="43894:43935" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44193:44234" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44569:44654" placeholder="SELECT Frien..user_perms..." />
           </folding>
         </state>
       </provider>
@@ -485,7 +525,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27804">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1503661271995" expanded="true" signature="944:999" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="2906:2956" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503661271995" expanded="true" signature="3273:3318" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503661271995" expanded="true" signature="4353:4427" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503661271995" expanded="true" signature="8454:8657" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="9295:9332" placeholder="DELETE FROM ..." />
+            <marker date="1503661271995" expanded="true" signature="10017:10068" placeholder="SELECT * FRO..fchpat_Note..." />
+            <marker date="1503661271995" expanded="true" signature="10221:10384" placeholder="SELECT * FRO..fchpat_Intervenants..." />
+            <marker date="1503661271995" expanded="true" signature="18349:18457" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="18362:18445" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="22422:22463" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="22917:22958" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="23572:23657" placeholder="SELECT Frien..user_perms..." />
+            <marker date="1503661271995" expanded="true" signature="30477:30521" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -533,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4844" max-vertical-offset="29540">
           <caret line="173" column="29" selection-start-line="173" selection-start-column="29" selection-end-line="173" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,21 +736,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4844" max-vertical-offset="29540">
           <caret line="173" column="29" selection-start-line="173" selection-start-column="29" selection-end-line="173" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7896" max-vertical-offset="11088">
-          <caret line="282" column="41" selection-start-line="282" selection-start-column="41" selection-end-line="282" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="7896" max-vertical-offset="11200">
+          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/verifLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4732" max-vertical-offset="5068">
+        <state vertical-scroll-proportion="0.49321267" vertical-offset="4405" max-vertical-offset="5068">
           <caret line="169" column="4" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="4" />
           <folding />
         </state>
@@ -712,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/topframe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1288">
+        <state vertical-scroll-proportion="0.13017751" vertical-offset="612" max-vertical-offset="1288">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="49" />
           <folding />
         </state>
@@ -720,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dossier_complet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="19964">
-          <caret line="143" column="81" selection-start-line="143" selection-start-column="81" selection-end-line="143" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="20104">
+          <caret line="143" column="2" selection-start-line="143" selection-start-column="2" selection-end-line="143" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -742,124 +795,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patient.php">
+    <entry file="file://$PROJECT_DIR$/dossierAccouchement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="17556" max-vertical-offset="27804">
-          <caret line="627" column="14" selection-start-line="627" selection-start-column="14" selection-end-line="627" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="200.14815" vertical-offset="6188" max-vertical-offset="26740">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <marker date="1503661271970" expanded="true" signature="985:1035" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503661271970" expanded="true" signature="1376:1421" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503661271970" expanded="true" signature="1986:2168" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="3151:3567" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="5537:5775" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="6904:7287" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="9192:9594" placeholder="INSERT INTO ..." />
+            <marker date="1503661271970" expanded="true" signature="11088:11464" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dossierAccouchement.php">
+    <entry file="file://$PROJECT_DIR$/patient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.62963" vertical-offset="0" max-vertical-offset="7336">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state vertical-scroll-proportion="-92.53571" vertical-offset="13830" max-vertical-offset="27916">
+          <caret line="679" column="42" selection-start-line="679" selection-start-column="42" selection-end-line="679" selection-end-column="42" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1503070737887" expanded="true" signature="421:1842" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="434:787" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="451:513" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="543:609" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="626:679" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="708:769" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="773:782" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="800:1299" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="817:874" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="891:960" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="978:1038" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1055:1127" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1144:1197" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1214:1281" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1285:1294" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1312:1829" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1329:1389" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1406:1477" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1494:1555" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1572:1650" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1667:1721" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1738:1815" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1863:3282" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1876:2453" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1905:1960" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="1977:2032" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2049:2118" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2135:2191" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2208:2278" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2295:2352" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2369:2439" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2466:3269" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2483:2536" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2553:2620" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2637:2690" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2707:2774" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2791:2845" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2862:2929" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="2946:3006" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3023:3092" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3109:3169" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3186:3255" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3303:4526" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3316:3980" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3333:3386" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3403:3535" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3552:3614" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3631:3778" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3829:3883" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3900:3966" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="3993:4526" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="4010:4064" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="4081:4214" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="4231:4289" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="4306:4445" placeholder="..." />
-            <marker date="1503070737887" expanded="true" signature="4496:4526" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="944:999" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="2906:2956" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503661271995" expanded="true" signature="3273:3318" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503661271995" expanded="true" signature="4353:4427" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503661271995" expanded="true" signature="8454:8657" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="9295:9332" placeholder="DELETE FROM ..." />
+            <marker date="1503661271995" expanded="true" signature="10017:10068" placeholder="SELECT * FRO..fchpat_Note..." />
+            <marker date="1503661271995" expanded="true" signature="10221:10384" placeholder="SELECT * FRO..fchpat_Intervenants..." />
+            <marker date="1503661271995" expanded="true" signature="18349:18457" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="18362:18445" placeholder="..." />
+            <marker date="1503661271995" expanded="true" signature="22422:22463" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="22917:22958" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503661271995" expanded="true" signature="23572:23657" placeholder="SELECT Frien..user_perms..." />
+            <marker date="1503661271995" expanded="true" signature="30477:30521" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8533123" vertical-offset="16455" max-vertical-offset="40964">
-          <caret line="607" column="5" selection-start-line="607" selection-start-column="5" selection-end-line="607" selection-end-column="5" />
+        <state vertical-scroll-proportion="4.7239747" vertical-offset="9213" max-vertical-offset="40516">
+          <caret line="436" column="76" selection-start-line="436" selection-start-column="76" selection-end-line="436" selection-end-column="76" />
           <folding>
-            <marker date="1503071481121" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="3445:3626" placeholder="..." />
-            <marker date="1503071481121" expanded="false" signature="3544:3583" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="3993:4164" placeholder="..." />
-            <marker date="1503071481121" expanded="false" signature="4085:4124" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="4125:4157" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="5336:5526" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="6276:6342" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="6591:6697" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="7141:7178" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="7750:7787" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="8642:8693" placeholder="SELECT * FRO..IndexNomPrenom..." />
-            <marker date="1503071481121" expanded="true" signature="9094:9140" placeholder="SELECT * FRO..fchpat..." />
-            <marker date="1503071481121" expanded="true" signature="11055:11072" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="11246:11263" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="11974:12137" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="12473:12523" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="12705:12763" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="12994:13031" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="13547:13584" placeholder="DELETE FROM ..." />
-            <marker date="1503071481121" expanded="true" signature="13886:13950" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="14203:14295" placeholder="UPDATE Rubri..." />
-            <marker date="1503071481121" expanded="true" signature="15035:15197" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="15555:15624" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="16154:16344" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="26076:26217" placeholder="SELECT UserN..IndexNomPrenom..." />
-            <marker date="1503071481121" expanded="true" signature="26619:26686" placeholder="..." />
-            <marker date="1503071481121" expanded="true" signature="27155:27272" placeholder="INSERT INTO ..." />
-            <marker date="1503071481121" expanded="true" signature="27621:27841" placeholder="SELECT * FRO..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="29822:29906" placeholder="SELECT RbDat..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="31615:31656" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="32019:32089" placeholder="SELECT * FRO..user_perms..." />
-            <marker date="1503071481121" expanded="true" signature="34988:35068" placeholder="SELECT RbDat..RubriquesHead..." />
-            <marker date="1503071481121" expanded="true" signature="35487:35528" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="35884:36047" placeholder="SELECT * FRO..RubriquesBlobs..." />
-            <marker date="1503071481121" expanded="true" signature="44371:44412" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="44670:44711" placeholder="SELECT GUID ..Personnes..." />
-            <marker date="1503071481121" expanded="true" signature="45046:45131" placeholder="SELECT Frien..user_perms..." />
+            <marker date="1503664793760" expanded="true" signature="1097:1153" placeholder="SELECT GUID,..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="3445:3626" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="3544:3583" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="3993:4164" placeholder="..." />
+            <marker date="1503664793760" expanded="false" signature="4085:4124" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4125:4157" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="4930:4999" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="5337:5527" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="6277:6343" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="6592:6698" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="7144:7181" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="7753:7790" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="8645:8696" placeholder="SELECT * FRO..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="9097:9143" placeholder="SELECT * FRO..fchpat..." />
+            <marker date="1503664793760" expanded="true" signature="11060:11077" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11251:11268" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="11979:12142" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="12478:12528" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12710:12768" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="12999:13036" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13552:13589" placeholder="DELETE FROM ..." />
+            <marker date="1503664793760" expanded="true" signature="13891:13955" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="14208:14300" placeholder="UPDATE Rubri..." />
+            <marker date="1503664793760" expanded="true" signature="15040:15202" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="15560:15629" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="16160:16350" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="23272:23311" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="23349:23456" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24320:24366" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24477:24513" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24514:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="24541:24571" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="25384:25525" placeholder="SELECT UserN..IndexNomPrenom..." />
+            <marker date="1503664793760" expanded="true" signature="25927:25994" placeholder="..." />
+            <marker date="1503664793760" expanded="true" signature="26464:26581" placeholder="INSERT INTO ..." />
+            <marker date="1503664793760" expanded="true" signature="26930:27150" placeholder="SELECT * FRO..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="29147:29231" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="30940:30981" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="31344:31414" placeholder="SELECT * FRO..user_perms..." />
+            <marker date="1503664793760" expanded="true" signature="34328:34408" placeholder="SELECT RbDat..RubriquesHead..." />
+            <marker date="1503664793760" expanded="true" signature="34827:34868" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="35224:35387" placeholder="SELECT * FRO..RubriquesBlobs..." />
+            <marker date="1503664793760" expanded="true" signature="43894:43935" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44193:44234" placeholder="SELECT GUID ..Personnes..." />
+            <marker date="1503664793760" expanded="true" signature="44569:44654" placeholder="SELECT Frien..user_perms..." />
           </folding>
         </state>
       </provider>

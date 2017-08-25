@@ -601,14 +601,13 @@ if ((isset($_REQUEST['observation_ID']) OR isset($_REQUEST['nouveau'])) AND !iss
        <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script*/
 
     }
-?>
+?>|
 <!-- 
   Include the WYSIWYG javascript files
 -->
            <?php if($titre_indice!='accouchement'){ ?>
 
-        <script type="text/javascript" src="scripts/wysiwyg.js"></script>
-    <script type="text/javascript" src="scripts/wysiwyg-settings.js"></script>
+        
             <?php } else header('location:dossierAccouchement.php?GUID='.$patient);?>
 <!-- 
   Attach the editor on the textareas

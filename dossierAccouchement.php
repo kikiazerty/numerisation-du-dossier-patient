@@ -54,6 +54,9 @@ catch(PDOException $e)
             $profession=$ligne2["FchPat_Profession"];
             $tel1 = $ligne2["FchPat_Tel1"];
             $tel2 = $ligne2["FchPat_Tel2"];
+            $date = date('Y-m-d');
+
+
 
 
 
@@ -177,6 +180,7 @@ catch(PDOException $e)
                     $insert_accouchement->bindValue(':anticonvusivant' , $_POST['anticonvusivant']);
                     $insert_accouchement->bindValue(':par' , $_POST['par']);
                     $insert_accouchement->bindValue(':ocytociquespostparfum' , $_POST['ocytociquespostparfum']);
+
                     $insert_accouchement->execute();
                     
 
@@ -395,7 +399,7 @@ catch(PDOException $e)
                 <label>Date</label>
             </td>
             <td>
-                <input type="date" name="date_grossesse">
+                <input type="date" name="date_grossesse" value="">
             </td>
             <td>
                 <label>Motif</label>
@@ -629,13 +633,13 @@ catch(PDOException $e)
                 </label>
             </td>
             <td>
-                <input type="text" name="poids">
+                <input type="number" name="poids">
             </td>
             <td>
                 <label>TAILLE :</label>
             </td>
             <td>
-                <input type="text" name="taille">
+                <input type="number" name="taille">
             </td>
         </tr>
         <tr>
@@ -827,7 +831,7 @@ catch(PDOException $e)
                 <label>POIDS :</label>
             </td>
             <td>
-                <input type="text" name="poids" placeholder="en gr">
+                <input type="number" name="poids" placeholder="en gr">
             </td>
             <td>
                 <label>APGARD 1'</label>
@@ -860,7 +864,7 @@ catch(PDOException $e)
                 <label>TAILLE</label>
             </td>
             <td>
-                <input type="text" name="taille">
+                <input type="number" name="taille">
             </td>
             <td>
                 <label>PC</label>
@@ -886,7 +890,7 @@ catch(PDOException $e)
                 <label>Poids Placenta</label>
             </td>
             <td>
-                <input type="text" name="poids_placenta" placeholder="en gr">
+                <input type="number" name="poids_placenta" placeholder="en gr">
             </td>
             <td>
                 <label>Insertion</label>
@@ -913,7 +917,7 @@ catch(PDOException $e)
                 <label>Longueur cordon :</label>
             </td>
             <td>
-                <input type="text" name="longueur_cordon" placeholder="en cm">
+                <input type="number" name="longueur_cordon" placeholder="en cm">
             </td>
         </tr>
         <tr>

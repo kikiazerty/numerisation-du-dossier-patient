@@ -86,7 +86,7 @@ catch(PDOException $e)
     <table>
         <tr>
             <td colspan="2">
-                <h2>ANTECEDENTS</h2>
+                <h2>ANTECEDENTS </h2>
             </td>
             <td>
                 <label>GESTE : </label>

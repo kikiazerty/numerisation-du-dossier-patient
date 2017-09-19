@@ -1,0 +1,19 @@
+h1{
+    width: 95%;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+footer{
+    margin-top: 2%;
+}
+.info{
+    display:inline ;
+}
+.coordonnee{
+    margin-left: 38%;
+}
+h3{
+    text-decoration: underline;
+}

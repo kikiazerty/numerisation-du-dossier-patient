@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - drtuxtest@localhost" uuid="0adc275a-d3d8-4ff2-aedb-0583c9029968">
+    <database-info product="MySQL" version="5.7.9" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="drtuxtest"/>
+    <table name="accouchement" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="date_accouchement" sqlType="VARCHAR" precision="14" scale="0" nullable="true" jdbcType="12"/>
+      <column name="transfert" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="delivrance" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="hemorragie" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="antibiotique" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="heure_accouchement" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="motif" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="gatpa" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="ocytociquesperparfum" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="anticonvulsivant" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="par" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ocytociquespostparfum" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="transfusion" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+    </table>
+    <table name="actes_disponibles" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="id_acte_dispo" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nom_acte" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="desc_acte" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="montant_total" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="montant_tiers" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="id_acte_dispo"/>
+    </table>
+    <table name="admission" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_admission" sqlType="VARCHAR" precision="14" scale="0" nullable="true" jdbcType="12"/>
+      <column name="heure" sqlType="VARCHAR" precision="17" scale="0" nullable="true" jdbcType="12"/>
+      <column name="par" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="evacuepar" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="hu" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="poids" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pde_intacte_rompue" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="presentation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="diagnostic" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="bdc" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="taille" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="heurepde" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="bassin" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="decision" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="temperature" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="la" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="col" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="paleur" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="ta" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="agenda" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="Date_Time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="Duree" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Nom" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Prenom" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="Tel" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="RDV_PrisPar" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="RDV_PrisAvec" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Note" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="Type" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="GUID" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="status" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="lock" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="Adresse" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+    </table>
+    <table name="agenda_mask" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="Motif" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Type" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Heure" sqlType="TIME" precision="8" scale="0" nullable="false" jdbcType="92" def="JzAwOjAwOjAwJw=="/>
+      <column name="Duree" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="User" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="DayOfWeek" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+    </table>
+    <table name="alarmes" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ID_Primkey" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="TextAlarme" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="Alarm_Date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="Alarm_AlarmDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="Nom" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Prenom" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Alarm_IDDos" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Alarm_valid" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="Alarm_utilisateur" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID_Primkey"/>
+    </table>
+    <table name="antecedents_accouchement" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="AVT" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GESTE" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ROM" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PARTIE" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="MNE" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ENFVIV" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DCDAVANT" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DCDAPRES" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="banques" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="BQ_CodeBqe" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="BQ_NomBqe" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_Adr1Bqe" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_Adr2Bqe" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_CPBqe" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_VilleBqe" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_Banque" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_Guichet" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_Compte" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="BQ_CleRib" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="BQ_CodeBqe"/>
+    </table>
+    <table name="cim10_user_favoris" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="User" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Data" sqlType="BLOB" precision="65535" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+    </table>
+    <table name="codes_postaux" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="code_postal" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="ville" sqlType="CHAR" precision="30" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <index name="id" unique="true" columns="id"/>
+    </table>
+    <table name="color_profils" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="Name" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Color" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Duree" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="PrimKey" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+    </table>
+    <table name="compteurs" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="CP_CodeCpteur" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CP_NumPS" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="CP_NomCpteur" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="CP_ValeurCpteur" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CP_CodeCpteur,CP_NumPS"/>
+    </table>
+    <table name="constante_grossesse_accouchement" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="grsh" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="test_emmel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="gaj" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="bw" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="aghbs" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ptme" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nfs" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="creat" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="alat" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="asat" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="depots" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="id_depot" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_usr" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="type_depot" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="periode_deb" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="periode_fin" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="blob_depot" sqlType="BLOB" precision="65535" scale="0" nullable="false" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="id_depot"/>
+    </table>
+    <table name="enfant" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="sexe" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="reanimation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="poids_placenta" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="aspect_cordon" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="sat" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="poids" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="taille" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="insertion" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="longeur_cordon" sqlType="VARCHAR" precision="13" scale="0" nullable="true" jdbcType="12"/>
+      <column name="vit_k" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="collyre" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="apgard1" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pc" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="apgard5" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pt" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="malf" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="pb" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="evnmt_liens" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="Evnmt_Liens_PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="Evnmt_Liens_DossPk" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="Evnmt_Liens_Pere" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="Evnmt_Liens_Fils" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="Evnmt_Flags" sqlType="CHAR" precision="20" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="Evnmt_Liens_PrimKey"/>
+    </table>
+    <table name="fact_entete" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="FE_TypeDoc" sqlType="CHAR" precision="4" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="FE_NumFact" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="FE_Site" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_DateFact" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="FE_LogUser" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_NumPS" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_PKPatient" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA=="/>
+      <column name="FE_GUIDPatient" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_NomPatient" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_PrenomPatient" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_NumSS" sqlType="VARCHAR" precision="21" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_DateNss" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="FE_Qualite" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="FE_RangGem" sqlType="CHAR" precision="2" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_TiersPayOblig" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_TiersPayCompl" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_CodePds" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_TopMT" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_NomMT" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_PrenomMT" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_NatAssur" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_OrgAssur" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_TotAMO" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotAMC" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotAssure" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotEtab" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotHono" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotHT" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotTVA" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotRegltAMO" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotRegltAMC" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotRegltASS" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_TotRegltETB" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_MtPP" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FE_GUIDPayeur" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_RegroupFSE" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_RegroupDRE" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_Soldee" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_Origine" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_CodeStat" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_NumEnvoi" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FE_DateEnvoi" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="FE_ARL" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FE_NumReg" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="FE_Libelle" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="FE_TypeDoc,FE_NumFact"/>
+    </table>
+    <table name="fact_ligne" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="FL_TypeDoc" sqlType="CHAR" precision="4" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="FL_NumFact" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="FL_NumLig" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="FL_DatePrest" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="FL_CodePrest" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FL_CodeCCAM" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FL_ModifCCAM" sqlType="CHAR" precision="4" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_CodeSupCCAM" sqlType="CHAR" precision="20" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_QualDep" sqlType="CHAR" precision="20" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_CodeAffine" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_Domicile" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_JourFerie" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_Nuit" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_Urgence" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_Exo" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_ALD" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_NumDent" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="FL_DEP" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_CodeAccorDEP" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="FL_DateDEP" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="FL_Qte" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_Coeff" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_Taux" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_BaseRembTheo" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_BaseRemb" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_MontRembAMO" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_MontRembAMC" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_MontHono" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_TotHT" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_TotTVA" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_tauxTVA" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="FL_CodeStat" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="FL_TypeDoc,FL_NumFact,FL_NumLig"/>
+    </table>
+    <table name="fchpat" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="FchPat_GUID_Doss" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_NomFille" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Nee" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Sexe" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1"/>
+      <column name="FchPat_NbEnfant" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="FchPat_Adresse" sqlType="VARCHAR" precision="180" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_CP" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="FchPat_Ville" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Cdx" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1"/>
+      <column name="FchPat_Pays" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Tel1" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Tel1_Typ" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_Tel2" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Tel2_Typ" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_Tel3" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Tel3_Typ" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_Email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_NumSS" sqlType="VARCHAR" precision="21" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_PatientAss" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="FchPat_NomAss" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_PrenomAss" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_AssNee" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_Profession" sqlType="VARCHAR" precision="48" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_Titre" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="FchPat_LoginPatient" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_PasswPatient" sqlType="VARCHAR" precision="60" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchPat_RefPk" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="FchPat_Geme" sqlType="CHAR" precision="2" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="FchPat_RefPk"/>
+      <index name="Index_RefPk" unique="false" columns="FchPat_RefPk"/>
+    </table>
+    <table name="fchpat_intervenants" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="fchpat_Intervenants_PK" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="fchpat_Intervenants_PatGUID" sqlType="CHAR" precision="36" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="fchpat_Intervenants_PatPK" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="fchpat_Intervenants_IntervPK" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="fchpat_Intervenants_Type" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="fchpat_Intervenants_PK"/>
+      <index name="fchpat_Intervenants_IndIntervPK" unique="false" columns="fchpat_Intervenants_IntervPK"/>
+      <index name="fchpat_Intervenants_IndPatPK" unique="false" columns="fchpat_Intervenants_PatPK"/>
+    </table>
+    <table name="fchpat_note" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="fchpat_Note_PK" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="fchpat_Note_PatGUID" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="fchpat_Note_PatPK" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="fchpat_Note_Html" sqlType="BLOB" precision="65535" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="fchpat_Note_PK"/>
+    </table>
+    <table name="grossesse_accouchement" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="index_patient" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="geu" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="prem" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="hta_complica" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="acc_dyst" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="cesar" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="date_grossesse" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="motif1" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type_mgf" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ddr" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="suivi_par" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="vat1" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="patho" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="f_risque" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nombre_cpn" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="vat2" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="hospitalisation" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="reference" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="vat3" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="motif2" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="honoraires" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="id_hono" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_usr" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="id_drtux_usr" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="patient" sqlType="VARCHAR" precision="75" scale="0" nullable="false" jdbcType="12"/>
+      <column name="GUID" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="praticien" sqlType="VARCHAR" precision="75" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="acte" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12"/>
+      <column name="remarque" sqlType="VARCHAR" precision="500" scale="0" nullable="true" jdbcType="12"/>
+      <column name="esp" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="chq" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="cb" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="daf" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="autre" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="du" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="valide" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id_hono"/>
+    </table>
+    <table name="indexnomprenom" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="FchGnrl_IDDos" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchGnrl_NomDos" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchGnrl_Prenom" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FchGnrl_Type" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ID_PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="ID_PrimKey"/>
+      <index name="ID_PrimKey" unique="true" columns="ID_PrimKey"/>
+    </table>
+    <table name="personnes" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="GUID" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="LoginSigems" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Login" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="PasswordSigems" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="PassWord" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="Droits" sqlType="VARCHAR" precision="400" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Sexe" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="CodeSpec" sqlType="CHAR" precision="2" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="NumOrdre" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="ClefRPPS" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="NumRPPS" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Nom" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="Prenom" sqlType="VARCHAR" precision="60" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Adresse" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Convention" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="CodePostal" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ville" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_1" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_2" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_3" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EMail" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ID_PrimKey" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Note" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="Qualite" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CodeRegime" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Titre" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Cher" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Type1" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Type2" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Type3" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Abr_1" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Abr_2" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Tel_Abr_3" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Site" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Couleur" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID_PrimKey"/>
+      <index name="Nom" unique="false" columns="Nom"/>
+    </table>
+    <table name="reglement" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="RG_NumReg" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="RG_TypeDoc" sqlType="CHAR" precision="4" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="RG_NumFact" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_Site" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_GUIDPatient" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_NumPS" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_NumNoemie" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="RG_DateReg" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RG_Payeur" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="RG_NatPayeur" sqlType="CHAR" precision="3" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="RG_OrgPayeur" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_MontReg" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="RG_MontPP" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="RG_MontAMO" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="RG_MontAMC" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8" def="MA=="/>
+      <column name="RG_OrgAMC" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_CodeReg" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_ModeReg" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_LogUser" sqlType="CHAR" precision="32" scale="0" nullable="true" jdbcType="1" def="Jyc="/>
+      <column name="RG_LibReg" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_NomBqe" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_AdrBqe" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_NumChq" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_DateEch" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RG_DateCreat" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RG_DateRemise" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RG_NumRemise" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_BqeRemise" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RG_TypeRemise" sqlType="VARCHAR" precision="4" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="RG_NumReg"/>
+    </table>
+    <table name="rubriquesblobs" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="RbDate_PrimKey" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="RbDate_DataRub" sqlType="LONGBLOB" precision="2147483647" scale="0" nullable="true" jdbcType="-4"/>
+      <column name="RbDate_IDDos" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="RbDate_PrimKey"/>
+      <index name="RbDate_BlobsIDDosIndex" unique="false" columns="RbDate_IDDos"/>
+    </table>
+    <table name="rubriqueshead" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="RbDate_PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="RbDate_IDDos" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_TypeRub" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="RbDate_NomDate" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_SubTypeRub" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RbDate_CreateUser" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_CreateSignUser" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="RbDate_Fin" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="RbDate_DureeMod" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="RbDate_Prop_0" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Prop_1" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Prop_2" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Prop_3" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Prop_4" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RbDate_Duree" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="RbDate_Ref_NumDoss" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="RbDate_RefBlobs_PrimKey" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="RbDate_PrimKey"/>
+      <index name="RbDate_GuidDossIndex" unique="false" columns="RbDate_IDDos"/>
+      <index name="RbDate_NumDossIndex" unique="false" columns="RbDate_Ref_NumDoss"/>
+    </table>
+    <table name="st_box" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="BO_Code" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="BO_Libelle" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_CouleurBG" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_CouleurTitre" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_Nb_Maxi_Pat" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="BO_Type" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="BO_Code"/>
+    </table>
+    <table name="st_destinations" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="DE_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="DE_Destination" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DE_TypeSortie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="DE_PK"/>
+    </table>
+    <table name="st_encours" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="EC_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="EC_CodeBox" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EC_NomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EC_HeureEntree" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="EC_Medecin" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_GUIDPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Replier" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="EC_HeureSortie" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EC_Commentaire" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_PrenomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_ProgAnnexe" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_ArgsAnnexe" sqlType="VARCHAR" precision="400" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Destination" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Anonyme" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="EC_PK"/>
+    </table>
+    <table name="st_encours_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="EN_PK_encours" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="EN_Num_tache" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="EN_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Comment" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Etat_en_cours" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_HeureDebPrevue" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureFinPrevue" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureDebut" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureFin" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_Priorite" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="EN_Note_tache" sqlType="VARCHAR" precision="5000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Code_acteur" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_PrimKey_blob" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="EN_NomFicNote" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_NomProgNote" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="EN_Num_tache"/>
+    </table>
+    <table name="st_etats" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ET_Code_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ET_Libelle_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ET_Couleur_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ET_Tache_terminee" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="ET_Code_etat"/>
+    </table>
+    <table name="st_etats_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ST_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ST_Code_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ST_Code_tache,ST_Code_etat"/>
+    </table>
+    <table name="st_historique" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="HI_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="HI_Code_box" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Nom_patient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_resp" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="HI_Libelle_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Action" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_NumEncours" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Libelle_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_PrenomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Commentaire" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_acteur" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="HI_PK"/>
+    </table>
+    <table name="st_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="TA_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Libelle_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Couleur_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_Duree_maxi" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="TA_Couleur_alarme" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_BoutonMenu" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Priorite" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_Commentaire" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="TA_Code_tache"/>
+    </table>
+    <table name="stock_data" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="stock_data_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="stock_data_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="stock_data_number" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="stock_data_available" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="stock_data_comment" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="stock_data_cat" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="stock_data_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="stock_data_command" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="UG91ciBkaXJlIHF1J3VuIHByb2R1aXQgbWFucXVhbnQgYSBldGUgY29tbWFuZGU="/>
+      <index name="stock_data_id" unique="false" columns="stock_data_id"/>
+    </table>
+    <table name="synopt_box" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="BO_Code" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="BO_Libelle" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_CouleurBG" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_CouleurTitre" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BO_Nb_Maxi_Pat" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="BO_Type" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="BO_Code"/>
+    </table>
+    <table name="synopt_destinations" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="DE_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="DE_Destination" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DE_TypeSortie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="DE_PK"/>
+    </table>
+    <table name="synopt_encours" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="EC_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="EC_CodeBox" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EC_NomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="EC_HeureEntree" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="EC_Medecin" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_GUIDPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Replier" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA=="/>
+      <column name="EC_HeureSortie" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EC_Commentaire" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_PrenomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_ProgAnnexe" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_ArgsAnnexe" sqlType="VARCHAR" precision="400" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Destination" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EC_Anonyme" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="EC_PK"/>
+    </table>
+    <table name="synopt_encours_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="EN_PK_encours" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="EN_Num_tache" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="EN_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Comment" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Etat_en_cours" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_HeureDebPrevue" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureFinPrevue" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureDebut" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_HeureFin" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="EN_Priorite" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="EN_Note_tache" sqlType="VARCHAR" precision="5000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_Code_acteur" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_PrimKey_blob" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="EN_NomFicNote" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="EN_NomProgNote" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="EN_Num_tache"/>
+    </table>
+    <table name="synopt_etats" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ET_Code_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ET_Libelle_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ET_Couleur_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ET_Tache_terminee" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="ET_Code_etat"/>
+    </table>
+    <table name="synopt_etats_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ST_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ST_Code_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ST_Code_tache,ST_Code_etat"/>
+    </table>
+    <table name="synopt_historique" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="HI_PK" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="HI_Code_box" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Nom_patient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_resp" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Date" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="HI_Libelle_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Action" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_NumEncours" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Libelle_etat" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_PrenomPatient" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Commentaire" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="HI_Code_acteur" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="HI_PK"/>
+    </table>
+    <table name="synopt_taches" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="TA_Code_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Libelle_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Couleur_tache" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_Duree_maxi" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="TA_Couleur_alarme" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_BoutonMenu" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TA_Priorite" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TA_Commentaire" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="TA_Code_tache"/>
+    </table>
+    <table name="user_perms" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="SignataireGUID" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FriendUserGUID" sqlType="VARCHAR" precision="36" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FriendUserDroits" sqlType="VARCHAR" precision="400" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FriendUserBlobs" sqlType="BLOB" precision="65535" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+      <index name="user_perms_Index" unique="false" columns="FriendUserGUID"/>
+    </table>
+    <table name="userdoc" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="ID_PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="ID_PrimKeyFromUser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="NameDoc" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="TypeDocuments" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="DataDocuments" sqlType="BLOB" precision="65535" scale="0" nullable="true" jdbcType="-4"/>
+      <primary-key name="PRIMARY" columns="ID_PrimKey"/>
+    </table>
+    <table name="utilisateurs" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="id_usr" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nom_usr" sqlType="VARCHAR" precision="150" scale="0" nullable="true" jdbcType="12"/>
+      <column name="login" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nom_banque" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rib_code_banque" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rib_code_guichet" sqlType="VARCHAR" precision="5" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rib_numcompte" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12"/>
+      <column name="rib_cle" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id_drtux_usr" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_usr"/>
+    </table>
+    <table name="verrous" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="Pk" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="StartTime" sqlType="VARCHAR" precision="17" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="RubName" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="RubPk" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <column name="DossGUID" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="UserName" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="SignUserName" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="DossPk" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="MA=="/>
+      <primary-key name="PRIMARY" columns="Pk"/>
+    </table>
+    <table name="version" schema="" catalog="drtuxtest" type="TABLE">
+      <column name="NumVers" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="PrimKey" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="PrimKey"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,46 @@
+body{
+    margin-left: 75px;
+    margin-right: 15px;
+    background-color: pink;
+}
+hr{
+    background-color: #000000;
+}
+h1{
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 40%;
+    width: 22%;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 0px;
+}
+.contenuExterne {
+    position: relative;
+    margin-top: -5%;
+    margin-bottom: 10px;
+    margin-left: unset;
+}
+table{
+    margin-top: 7%;
+}
+div{
+    margin-left: 20%;
+}
+#observation{
+    margin-left:25%;
+}
+.separation {
+    clear: both;
+    position: absolute;
+    margin-top: -31px;
+    margin-left: 292px;
+    height: 350px;
+    width: 5px;
+    background: #141434;
+}
+textarea{
+    position: absolute;
+    margin-left: 6%;
+    margin-bottom:10px;
+}

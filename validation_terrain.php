@@ -1,4 +1,4 @@
-<?php
+t<?php
 /*
 Page non affichable destinee a enregistrer les nouvelles donnees du terrain, envoyees par la page tableaux.php. Renvoie a tableaux.
 */

@@ -1,0 +1,15 @@
+
+body{
+}
+h1{
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 24%;
+    margin-bottom: 3%;
+}
+label[for="nomSurveillance"]{
+    margin-left: 50%;
+}
+

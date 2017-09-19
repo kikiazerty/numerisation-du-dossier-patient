@@ -596,7 +596,6 @@ function showButtons(number)
     </script>
 
 
-<!-- 
   Attach the editor on the textareas
 -->
     <script type="text/javascript">
